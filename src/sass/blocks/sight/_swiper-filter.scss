@@ -1,0 +1,25 @@
+.swiper-filter .swiper-pagination-bullet {
+  position: relative;
+  opacity: 1;
+  background-color: rgba($color-default-white, 0.4);
+  width: 14px;
+  height: 14px;
+  transition: all $trans-default;
+}
+
+.swiper-filter .swiper-pagination-bullet-active {
+  background-color: rgba($color-default-white, 0.8);
+  transition: all $trans-default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: $color-haiti;
+    border-radius: 100%;
+  }
+}

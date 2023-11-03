@@ -1,0 +1,177 @@
+{% set routes = [
+    {
+        iconText1: 'Приладожье',
+        iconText2: '6 часов',
+        title:'3 святыни <br> севера',
+        description:'Северная Карелия богата историческими и культурными святынями, которые отражают дух этого уникального региона. Эти святыни представляют историческое, культурное и религиозное богатство Северной Карелии, привлекая путешественников и исследователей со всего мира.',
+        imgBig:'./assets/images/img/routes-img/Img19.jpg',
+        imgSmall1:'./assets/images/img/routes-img/Img20.jpg',
+        imgSmall2:'./assets/images/img/routes-img/Img21.jpg',
+        imgBig_2x:'./assets/images/img/routes-img/Img19@2x.jpg',
+        imgSmall1_2x:'./assets/images/img/routes-img/Img20@2x.jpg',
+        imgSmall2_2x:'./assets/images/img/routes-img/Img21@2x.jpg',
+        alt:'photo',
+    },
+    {
+        iconText1: 'Ладога',
+        iconText2: '3.5 часа',
+        title:'Приключение <br> вокруг Ладоги',
+        description:'Живописные берега и холмы. Невероятные виды и впечатления. Уединенные пляжи, голубое небо и кристально чистая вода создают идеальное место для отдыха и водных развлечений.',
+        imgBig:'./assets/images/img/routes-img/Img22.jpg',
+        imgSmall1:'./assets/images/img/routes-img/Img23.jpg',
+        imgSmall2:'./assets/images/img/routes-img/Img24.jpg',
+        imgBig_2x:'./assets/images/img/routes-img/Img22@2x.jpg',
+        imgSmall1_2x:'./assets/images/img/routes-img/Img23@2x.jpg',
+        imgSmall2_2x:'./assets/images/img/routes-img/Img24@2x.jpg',
+        alt:'photo',
+        classMode: 'routes__list-content--reverse'
+    },
+    {
+        iconText1: 'Ладога',
+        iconText2: '3.5 часа',
+        title:'Онежское <br> «море»',
+        description:'Природное великолепие, известное как «море», которое является одним из самых крупных озер в Европе и одним из наиболее значимых природных и культурных богатств России.',
+        imgBig:'./assets/images/img/routes-img/Img37.jpg',
+        imgSmall1:'./assets/images/img/routes-img/Img38.jpg',
+        imgSmall2:'./assets/images/img/routes-img/Img39.jpg',
+        imgBig_2x:'./assets/images/img/routes-img/Img37@2x.jpg',
+        imgSmall1_2x:'./assets/images/img/routes-img/Img38@2x.jpg',
+        imgSmall2_2x:'./assets/images/img/routes-img/Img39@2x.jpg',
+        alt:'photo',
+    },
+] %}
+
+<section class="routes">
+    <div class="routes__wrapper container">
+
+{#        <svg class="routes__background-icon" width="739" height="1517" viewBox="0 0 739 1517" fill="none"#}
+{#             xmlns="http://www.w3.org/2000/svg">#}
+{#            <path#}
+{#                    d="M434.817 1C434.817 1 391.317 60 273.817 76.5C156.317 93 97.8169 157 97.8169 157C97.8169 157 -12.1829 261.5 2.31719 360.5C16.8173 459.5 55.8172 498 55.8172 498C55.8172 498 82.8164 528.5 245.316 648.5C366.179 737.752 477.297 879.131 547.316 947.5C571.438 971.053 626.816 989 626.816 989C626.816 989 729.316 1002 737.816 1136.5C746.316 1271 645.316 1304 630.316 1313.5C615.316 1323 470.316 1377 455.316 1385.5C440.316 1394 351.816 1426 329.316 1516"#}
+{#                    stroke="#1C1B1E"#}
+{#                    stroke-dasharray="4 4"#}
+{#            />#}
+{#            <path class="routes__background-icon--full-line" id="path_routes"#}
+{#                  d="M434.817 1C434.817 1 391.317 60 273.817 76.5C156.317 93 97.8169 157 97.8169 157C97.8169 157 -12.1829 261.5 2.31719 360.5C16.8173 459.5 55.8172 498 55.8172 498C55.8172 498 82.8164 528.5 245.316 648.5C366.179 737.752 477.297 879.131 547.316 947.5C571.438 971.053 626.816 989 626.816 989C626.816 989 729.316 1002 737.816 1136.5C746.316 1271 645.316 1304 630.316 1313.5C615.316 1323 470.316 1377 455.316 1385.5C440.316 1394 351.816 1426 329.316 1516"#}
+{#                  stroke="#6FF8B3"#}
+{#                  stroke-width="2"#}
+{#            />#}
+{#        </svg>#}
+
+        <div class="routes__container">
+            <h2 class="routes__title title-h2">Маршруты</h2>
+            <div class="routes__list-wrapper">
+                {% for item in routes %}
+                    <div class="routes__list">
+                        <div class="routes__list-content {% if item.classMode %}{{ item.classMode }}{% endif %}">
+                            <div class="routes__tag-list">
+                                <div class="btn routes__tag-item">
+                                    <svg
+                                            class="routes__tag-svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                    >
+                                        <path
+                                                d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                        />
+                                        <path
+                                                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>{{ item.iconText1 }}</span>
+                                </div>
+                                <div class="btn routes__tag-item">
+                                    <svg
+                                            class="routes__tag-svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                    >
+                                        <path
+                                                d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                        />
+                                        <path
+                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-dasharray="0.1 3.5"
+                                        />
+                                        <path
+                                                d="M11.5 8V13H16.5"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>{{ item.iconText2 }}</span>
+                                </div>
+                            </div>
+                            <h3 class="routes__name title-h3">{{ item.title }}</h3>
+                            <p class="routes__description">
+                                {{ item.description }}
+                            </p>
+                        </div>
+                        <div class="routes__img-list">
+                            <div class="img__small img__small--left">
+                                <img
+                                        width="350"
+                                        height="250"
+                                        src="{{ item.imgSmall1 }}"
+                                        srcset="{{ item.imgSmall1_2x }}"
+                                        alt="{{ item.alt }}"
+                                        loading="lazy"
+                                        decoding="auto"
+                                >
+                            </div>
+                            <div class="img__big">
+                                <img
+                                        width="809"
+                                        height="500"
+                                        src="{{ item.imgBig }}"
+                                        srcset="{{ item.imgBig_2x }}"
+                                        alt="{{ item.alt }}"
+                                        loading="lazy"
+                                        decoding="auto"
+                                >
+                            </div>
+                            <div class="img__small img__small--right">
+                                <img
+                                        width="350"
+                                        height="250"
+                                        src="{{ item.imgSmall2 }}"
+                                        srcset="{{ item.imgSmall2_2x }}"
+                                        alt="{{ item.alt }}"
+                                        loading="lazy"
+                                        decoding="auto"
+                                >
+                            </div>
+                        </div>
+                        <div class="routes__img-list-btn-wrapper">
+                            <a class="btn btn--green" href="#">Информация о локации</a>
+                        </div>
+                        <a class="routes__big-link" href="#"></a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

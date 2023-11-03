@@ -1,0 +1,110 @@
+.add-photo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.add-photo__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 190px;
+  background-color: $color-default-white;
+  color: map-get($gray, gray-4);
+  cursor: pointer;
+  row-gap: 10px;
+  padding: 20px;
+  border-radius: 7px;
+  text-align: center;
+  border: 2px dashed $color-solitude;
+  transition: all $trans-default;
+
+  &:hover,
+  &:focus {
+    color: $color-haiti;
+  }
+
+  &--full {
+    border-color: map-get($corporate, corp-1);
+  }
+}
+
+.add-photo__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0;
+  list-style-type: none;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.add-photo__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-solitude;
+  min-height: 46px;
+  border-radius: 7px;
+  padding: 10px 20px;
+  gap: 20px;
+  color: map-get($gray, gray-4);
+}
+
+.add-photo__file-name {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.add-photo__file-delete {
+  padding: 0;
+  background-color: transparent;
+  color: map-get($gray, gray-4);
+
+  @include hover {
+    opacity: 1;
+    color: $color-haiti;
+  }
+}
+
+.add-photo__loading-wrapper {
+  background-color: $color-default-white;
+  width: 50px;
+  height: 8px;
+  border-radius: 20px;
+  margin-left: auto;
+}
+
+.add-photo__loading {
+  background-color: map-get($corporate, corp-1);
+  width: 0;
+  height: 8px;
+  border-radius: 20px;
+  animation-name: loading-file;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes loading-file {
+  from {
+    width: 0;
+  }
+
+  20% {
+    width: 20%;
+    background-color: $color-red;
+  }
+
+  50% {
+    width: 50%;
+    background-color: $color-orange;
+  }
+
+  to {
+    width: 100%;
+    background-color: map-get($corporate, corp-1);
+  }
+}
+

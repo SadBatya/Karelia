@@ -1,0 +1,54 @@
+.post-rules {
+  margin-bottom: 40px;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+details summary {
+  display: block;
+  width: fit-content;
+  outline-style: none;
+  cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] div {
+  animation: spoiler 0.3s;
+}
+
+
+.post-rules__summary {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.post-rules__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+
+.post-rules__details h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+@keyframes spoiler {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    max-height: fit-content;
+  }
+}

@@ -1,0 +1,45 @@
+.article-block--count-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+
+  @include vp-1279 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-block__article {
+    @include vp-767 {
+      max-width: 100%;
+    }
+  }
+
+  .article-block__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-block__img {
+    border-radius: 15px;
+    height: 408px;
+  }
+
+  .article-block__title-wrapper {
+    position: static;
+    transform: translate(0, 0);
+    padding: 20px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .article-block__title {
+    color: $color-haiti;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

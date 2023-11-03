@@ -1,0 +1,105 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+
+$color-orange:                      #fa6c17;
+$color-yellow:                      #e79c0c;
+$color-light-green:                 #8bcc00;
+$color-teal:                        #419288;
+$color-blue:                        #004ea3;
+$color-pink:                        #b840a6;
+$color-red:                         #cd1818;
+$color-haiti:                       #1c1b1e;
+$color-nero:                        #232323;
+$color-solitude:                    #f5f6f9;
+$color-scrollbar:                   #0000000f;
+
+$corporate : (
+  corp-1: #6ff8b3,
+  corp-2: #ebb500,
+  corp-3: #18be2b,
+  corp-4: rgba(111, 248, 179, 0.5),
+);
+
+$tone-day : (
+  gray:  rgba(0, 0, 0, 0.06),
+  black: rgba(0, 0, 0, 0.4),
+);
+
+$tone-night : (
+  white-1: rgba(255, 255, 255, 0.2),
+  white-2: rgba(255, 255, 255, 0.4),
+  white-3: rgba(255, 255, 255, 0.7),
+);
+
+$gray : (
+  gray-1: #eff2fb,
+  gray-2: #dfe2ea,
+  gray-3: #b0b3b9,
+  gray-4: #717378,
+);
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+//Shadow
+//---------------------------------
+
+$shadow-1: 0 0 1px 0 rgba(0, 0, 0, 0.1), 0 6px 6px -6px rgba(0, 0, 0, 0.2);
+$shadow-2: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+$shadow-3: 0 7px 20px 0 rgba(0, 0, 0, 0.05);
+$shadow-routes: 0 0 14px 59px rgba(245, 246, 249, 0.98);
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble:                         "Rouble", "Arial", sans-serif;
+
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+$ff-font-geologica:                 "Geologica","Arial", sans-serif;
+$ff-font-montserrat:                "Montserrat", "Arial", sans-serif;
+$ff-font-kizhich:                   "GG Kizhich", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-425:                            425px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1660:                           1660px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

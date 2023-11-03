@@ -1,0 +1,84 @@
+{% set swiperImg = [
+  {
+    id: 1,
+    src: './assets/images/img/slider-image-header/Img-slider-25.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-25@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 2,
+    src: './assets/images/img/slider-image-header/Img-slider-26.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-26@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 3,
+    src: './assets/images/img/slider-image-header/Img-slider-27.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-27@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 4,
+    src: './assets/images/img/slider-image-header/Img-slider-28.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-28@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 5,
+    src: './assets/images/img/slider-image-header/Img-slider-29.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-29@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 6,
+    src: './assets/images/img/slider-image-header/Img-slider-30.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-30@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 7,
+    src: './assets/images/img/slider-image-header/Img-slider-31.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-31@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 8,
+    src: './assets/images/img/slider-image-header/Img-slider-32.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-32@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 9,
+    src: './assets/images/img/slider-image-header/Img-slider-33.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-33@2x.jpg',
+    alt:'photo'
+  },
+  {
+    id: 10,
+    src: './assets/images/img/slider-image-header/Img-slider-34.jpg',
+    srcset: './assets/images/img/slider-image-header/Img-slider-34@2x.jpg',
+    alt:'photo'
+  },
+
+] %}
+
+<section class="swiper__footer {{ classMode }}">
+    <div class="swiper__inner swiper__inner--right">
+      <div class="swiper-wrapper">
+        {% for img in swiperImg %}
+        <div class="swiper-slide swiper-slide--height">
+          <img src="{{ img.src }}" srcset="{{ img.srcset }}" alt="{{ img.alt }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="swiper__inner swiper__inner--left">
+      <div class="swiper-wrapper">
+        {% for img in swiperImg %}
+        <div class="swiper-slide swiper-slide--height">
+          <img src="{{ img.src }}" alt="{{ img.alt }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+</section>

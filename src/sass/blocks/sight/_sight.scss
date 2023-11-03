@@ -1,0 +1,19 @@
+.sight__inner {
+  padding-left: 140px;
+  margin-bottom: 80px;
+
+  @include vp-1023 {
+    padding-left: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.sight-filter--text-left .article-block__title-wrapper {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.sight-filter--text-left .article-block__text {
+  text-align: left;
+}
+

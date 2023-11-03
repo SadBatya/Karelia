@@ -1,0 +1,44 @@
+{% set pages = [
+    {
+        title: 'Главная',
+        href: './index.html',
+    },
+    {
+        title: 'Контентная страница',
+        href: './content.html',
+    },
+    {
+        title: 'Достопримечательности',
+        href: './sight.html',
+    },
+    {
+        title: 'Детальная страница',
+        href: './detail-page.html',
+    },
+    {
+        title: 'О Карелии',
+        href: './about.html',
+    },
+] %}
+<div class="layout">
+    <section class="dev-navigation">
+        <div class="wrapper">
+            <div class="dev-navigation__wrap container">
+                <h1 class="dev-navigation__header title-h1 mb-30">
+                    Навигация
+                </h1>
+
+                {% for page in pages %}
+                    <div class="dev-navigation__item mb-30">
+                        <h2 class="dev-navigation__title">{{ loop.index }}. {{ page.title }}</h2>
+                        <ul class="dev-navigation__list">
+                            <li class="dev-navigation__item">
+                                <a class="dev-navigation__link" target="_blank" href="{{ page.href }}">{{ page.title }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>

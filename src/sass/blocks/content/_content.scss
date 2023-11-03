@@ -1,0 +1,38 @@
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.content__block p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.content__block h2 {
+  font-family: $ff-font-kizhich;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  margin: 0;
+  margin-bottom: 50px;
+
+  @include vp-767 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 30px;
+  }
+
+  @include vp-374 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+  }
+}
+
+.content__block ul,
+.content__block ol {
+  margin: 0;
+  margin-bottom: 20px;
+}
+

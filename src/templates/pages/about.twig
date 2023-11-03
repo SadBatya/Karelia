@@ -1,0 +1,69 @@
+<div class="layout about">
+    <div class="about__header">
+        <img
+                class="about__header-img"
+                src="./assets/images/background/background-image3.jpg"
+                srcset="./assets/images/background/background-image3@2x.jpg"
+                alt=""
+        >
+        <div class="about__header-content container">
+            <h1 class="about__header-content title-h1"> О Карелии </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="about__block-wrapper about__block-wrapper--text">
+            <p class="about__header-text text-kizhich">
+                Карелия – край 1000 озер, вековых лесов и традиций Севера. Уникальные
+                пейзажи и древняя культура переплелись между собой, создав неповторимую
+                атмосферу дикой тайги и теплого гостеприимства. Здесь можно увидеть
+                наскальные рисунки первобытных людей, завораживающие закаты и главные
+                христианские святыни России.
+            </p>
+        </div>
+    </div>
+
+    <div>
+{#        <div class="about__button-list">#}
+{#            <div class="about__button-list-wrapper">#}
+{#                <button class="btn about__button-item about__button-item--active" type="button">Летом</button>#}
+{#                <button class="btn about__button-item" type="button">Осенью</button>#}
+{#                <button class="btn about__button-item" type="button">Зимой</button>#}
+{#                <button class="btn about__button-item" type="button">Весной</button>#}
+{#            </div>#}
+{#        </div>#}
+        {% include "./../template-parts/home-page/swiper-footer.twig" %}
+    </div>
+
+    <section class="about__section container">
+        <div class="about__block-wrapper about__block-wrapper--text">
+            <p>
+                Сосновые леса богаты свежим воздухом, обогащенным эфирными маслами хвои.
+                Эти масла, освобождаясь в атмосферу, создают балансированную смесь
+                ароматов, которая благотворно влияет на наше настроение и физическое
+                состояние. Кроме того, сосновые леса излучают отрицательные ионы, которые
+                помогают улучшить наше самочувствие и повысить иммунитет.
+            </p>
+            <span>Что вас ждёт в лесу:</span>
+            <ul>
+                <li>свежий воздух с эфирными маслами хвои;</li>
+                <li>балансированный аромат, повышающий настроение:</li>
+                <li>излучение отрицательных ионов для улучшения самочувствия.</li>
+                <li>излучение отрицательных ионов для улучшения самочувствия.</li>
+            </ul>
+            <p>
+                Ходьба по сосновому лесу сопровождается приятным шуршанием иголок под
+                ногами и шелестом ветра в кронах деревьев. Этот природный звуковой фон
+                имеет успокаивающее действие на нашу психику, способствует релаксации и
+                устранению стресса. Звуки природы в сочетании с присутствием сосен создают
+                идеальную обстановку для медитации и внутреннего спокойствия.
+            </p>
+        </div>
+    </section>
+
+    <div>
+        {% include "./../template-parts/home-page/routes.twig" %}
+        {% include "./../template-parts/home-page/more.twig", with { classMode: "more--mod"} %}
+    </div>
+
+    {% include "./../components/ticket-widget.twig" %}
+</div>

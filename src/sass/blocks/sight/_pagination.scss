@@ -1,0 +1,95 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pagination__wrapper {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  @include vp-767 {
+    column-gap: 10px;
+  }
+}
+
+.pagination__btn {
+  @include vp-767 {
+    padding: 6px;
+  }
+
+  @include vp-424 {
+    display: none;
+  }
+
+  &:hover {
+    svg {
+      stroke: map-get($gray, gray-4);
+    }
+  }
+}
+
+.pagination__btn svg {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  transition: $trans-default;
+  stroke: $color-default-black;
+}
+
+.pagination__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-content: center;
+  column-gap: 15px;
+
+  @include vp-767 {
+    column-gap: 10px;
+  }
+}
+
+.pagination__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.pagination__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background-color: $color-transparent;
+  transition: background-color $trans-default;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+  }
+
+  &--active {
+    background-color: map-get($corporate, corp-1);
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+    font-size: 0.875rem;
+  }
+}
+

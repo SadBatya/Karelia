@@ -1,0 +1,188 @@
+{% set menuItems = [
+    {
+        text: 'О Карелии',
+        link: '#',
+    },
+    {
+        text: 'Чем заняться?',
+        link: '#',
+        subItems: [
+        {
+            text: 'События',
+            link: '#',
+        },
+        {
+            text: 'Спорт',
+            link: '#',
+        },
+        {
+            text: 'Достопримечательности',
+            link: '#',
+        },
+        {
+            text: 'Парки и места для прогулок',
+            link: '#',
+        },
+        {
+            text: 'Религия',
+            link: '#',
+        },
+        {
+            text: 'Отдых на природе',
+            link: '#',
+        },
+        {
+            text: 'Шопинг',
+            link: '#',
+        },
+        {
+            text: 'Оздоровление и медицина',
+            link: '#',
+        },
+        {
+            text: 'Развлечения',
+            link: '#',
+        },
+    ]
+    },
+    {
+        text: 'Идеи и маршруты',
+        link: '#',
+    },
+    {
+        text: 'Где побывать?',
+        link: '#',
+    },
+    {
+        text: 'Ваши впечатления',
+        link: '#',
+    },
+    {
+        text: 'Лайфхаки и советы',
+        link: '#',
+    },
+    {
+        text: 'Ещё',
+        link: '#',
+        subItems: [
+        {
+            text: 'Идеи и маршруты',
+            link: '#',
+        },
+        {
+            text: 'Где побывать',
+            link: '#',
+        },
+        {
+            text: 'Ваши впечатления',
+            link: '#',
+        },
+        {
+            text: 'Лайфхаки и советы',
+            link: '#',
+        }
+    ]
+    },
+] %}
+
+<header class="header">
+    <div class="header__wrapper container">
+        <div class="header__logo logo">
+            <a href="./index.html">
+                <img class="logo__img" width="243" height="60" src="./assets/images/svg/logo-karelia.svg"
+                     alt="Логотип компании">
+            </a>
+        </div>
+        <div class="header__content">
+            <nav class="header__nav nav header__nav--close js-nav">
+                <div class="header__nav-mobile-wrapper">
+                    <div class="header__nav-mobile">
+                        <h3 class="header__nav-mobile-title">Меню</h3>
+
+                        <button class="header__nav-button-close btn" aria-label="Закрыть меню">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="header__content-language language">
+                        <ul class="language__list">
+                            <li>
+                                <a class="language__link language__link--active" href="#">RU</a>
+                            </li>
+                            <li>
+                                <a class="language__link" href="#">EN</a>
+                            </li>
+                            <li>
+                                <a class="language__link" href="#">CH</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="nav__list">
+                    {% for el in menuItems %}
+                        <li class="nav__item {% if el.subItems %} nav__item--close {% endif %}">
+                            <a class="nav__item-link" href={{ el.link }}>
+                                <span>{{ el.text }}</span>
+                                {% if el.subItems %}
+                                    <svg class="nav__item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                {% endif %}
+                            </a>
+                            {% if el.subItems %}
+                                <div class="nav__sub-list-wrapper">
+                                    <ul class="nav__sub-list">
+                                        {% for item in el.subItems %}
+                                            <li class="nav__sub-item">
+                                                <a class="nav__sub-item-link" href={{ item.link }}>{{ item.text }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="header__content-btn-wrapper">
+                    <button class="header__content-btn btn btn--green js-add-post-btn">Добавить пост</button>
+                </div>
+
+            </nav>
+            <div class="header__content-language language js-language">
+                <button class="language__change-btn btn" type="button">RU</button>
+                <div class="language__list-wrapper">
+                    <ul class="language__list">
+                        <li>
+                            <a class="language__link language__link--active" href="#">RU</a>
+                        </li>
+                        <li>
+                            <a class="language__link" href="#">EN</a>
+                        </li>
+                        <li>
+                            <a class="language__link" href="#">CH</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <button class="header__content-btn btn btn--green js-add-post-btn">Добавить пост</button>
+            <button class="header__burger-btn js-burger-button" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 12H17M3 6H21M3 18H21" stroke="#1C1B1E" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>

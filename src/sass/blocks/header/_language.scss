@@ -1,0 +1,118 @@
+.language {
+  @include vp-767 {
+    border-radius: 9999px;
+    overflow: hidden;
+    width: fit-content;
+  }
+}
+
+.language__list li:has(.language__link--active).language {
+  position: relative;
+  background-color: $color-solitude;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.language__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $color-default-white;
+  padding: 5px;
+  row-gap: 10px;
+  list-style-type: none;
+  border-radius: 9999px;
+  box-shadow: $shadow-3;
+
+  @include vp-767 {
+    position: static;
+    flex-direction: row;
+    background-color: $color-solitude;
+  }
+}
+
+.language__list li:has(.language__link--active) {
+  //display: none;
+
+  @include vp-767 {
+    display: list-item;
+  }
+}
+
+.language__list--close {
+  //display: none;
+}
+
+.language__list--open {
+  display: flex;
+}
+
+.language__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 36px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  border-radius: 100%;
+  background-color: $color-transparent;
+  color: map-get($gray, gray-4);
+  transition: all $trans-default;
+
+  &:hover,
+  &:focus-within {
+    background-color: $color-default-white;
+    color: $color-haiti;
+  }
+
+  &--active {
+    background-color: $color-solitude;
+    color: $color-haiti;
+  }
+
+  @include vp-767 {
+    &--active {
+      background-color: $color-default-white;
+    }
+  }
+}
+
+.language__list-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  background-color: $color-transparent;
+  padding-top: 20px;
+  position: absolute;
+  top: 73px;
+  z-index: 100;
+  transition: all $trans-default;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.language__change-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: map-get($gray, gray-4);
+  border-radius: 100%;
+  width: 46px;
+  height: 46px;
+  font-size: 0.875rem;
+
+  &:hover,
+  &:focus {
+    background-color: map-get($gray, gray-1);
+
+    & + .language__list-wrapper {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

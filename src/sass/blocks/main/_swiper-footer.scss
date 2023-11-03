@@ -1,0 +1,28 @@
+.swiper__footer {
+  z-index: -1;
+}
+
+.swiper__footer .swiper-wrapper {
+  margin-bottom: 10px;
+  transition-timing-function: linear;
+}
+
+.swiper__footer .swiper__inner {
+  overflow: hidden;
+}
+
+.swiper__footer .swiper-slide {
+  &--height {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}
+
+.swiper-footer--mod {
+  margin-bottom: -150px;
+
+  @include vp-767 {
+    margin-bottom: -100px;
+  }
+}

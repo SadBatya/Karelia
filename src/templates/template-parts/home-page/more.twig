@@ -1,0 +1,55 @@
+{% set buttonItems = [
+  {
+    text: 'События',
+    link: '#'
+  },
+  {
+    text: 'Достопримечательности',
+    link: '#'
+  },
+  {
+    text: 'Религия',
+    link: '#'
+  },
+  {
+    text: 'Шопинг',
+    link: '#'
+  },
+  {
+    text: 'Развлечения',
+    link: '#'
+  },
+  {
+    text: 'Спорт',
+    link: '#'
+  },
+  {
+    text: 'Парки и места для прогулок',
+    link: '#'
+  },
+  {
+    text: 'Отдых на природе',
+    link: '#'
+  },
+  {
+    text: 'Оздоровление и медицина',
+    link: '#'
+  },
+
+] %}
+
+<section class="more container {{classMode}}">
+  <div class="more__wrapper">
+    <span class="more__text">
+      А также
+    </span>
+    <h2 class="more__title">Загляните и в другие наши {{ text }}</h2>
+    <div class="more__button-list">
+      {% for item in buttonItems %}
+        <a class="btn more__btn" href="{{ item.link }}">
+          {{ item.text }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

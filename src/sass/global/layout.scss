@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  padding-bottom: 80px;
+  padding-top: 160px;
+
+  @include vp-767 {
+    row-gap: 60px;
+    padding-bottom: 60px;
+    padding-top: 120px;
+  }
+}

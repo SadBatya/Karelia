@@ -1,0 +1,70 @@
+.cost-ticket__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cost-ticket__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+  width: 100%;
+  padding: 80px 30px;
+  background-color: $color-default-white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: $shadow-3;
+}
+
+.cost-ticket__welcome {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.cost-ticket__title {
+  margin: 0;
+  font-family: $ff-font-geologica;
+  margin-bottom: 25px;
+}
+
+.cost-ticket__type-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  column-gap: 10px;
+}
+
+.cost-ticket__type-item {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cost-ticket__type-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 15px;
+  background-color: $color-transparent;
+  border-radius: 50px;
+  transition: background-color $trans-default;
+
+  &:hover,
+  &:focus-visible {
+    background-color: map-get($gray, gray-1);
+  }
+
+  &--active {
+    background-color: map-get($gray, gray-1);
+  }
+}
+
+.cost-ticket__form {
+  width: 100%;
+}

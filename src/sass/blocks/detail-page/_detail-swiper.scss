@@ -1,0 +1,64 @@
+.detail-swiper {
+  padding: 0 20px;
+}
+
+.detail-swiper__slide {
+  max-width: 669px;
+
+  @include vp-767 {
+    max-width: 320px;
+  }
+}
+
+.detail-swiper .swiper-button-prev,
+.detail-swiper .swiper-button-next {
+  background-color: rgba($color-default-white, 0.4);
+  box-shadow: $shadow-3;
+  width: 64px;
+  height: 50px;
+  padding: 11px 20px;
+  border-radius: 30px;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
+}
+
+.detail-swiper .swiper-button-next::after {
+  background-image: url("./images/svg/icon-arrow-next.svg");
+}
+
+.detail-swiper .swiper-button-prev::after {
+  background-image: url("./images/svg/icon-arrow-prev.svg");
+}
+
+.detail-swiper .swiper-pagination-bullet {
+  position: relative;
+  opacity: 1;
+  background-color: rgba($color-default-white, 0.4);
+  width: 14px;
+  height: 14px;
+  transition: all $trans-default;
+}
+
+.detail-swiper .swiper-pagination-bullet-active {
+  background-color: rgba($color-default-white, 0.8);
+  transition: all $trans-default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: $color-haiti;
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,164 @@
+@keyframes snake {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.main-info {
+  position: relative;
+  padding: 110px 0 125px;
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.main-info__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  @include vp-767 {
+    gap: 23px;
+    padding: 136px 0 80px;
+  }
+}
+
+.main-info__snake-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-info__snake-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke: $color-default-white;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: snake 3s linear forwards;
+}
+
+.main-info__title {
+  color: $color-haiti;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $ff-font-kizhich;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5625rem;
+  margin: 0;
+
+  @include vp-767 {
+    font-family: $ff-font-kizhich;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.main-info__inner-text {
+  position: relative;
+}
+
+.main-info__inner-label {
+  position: absolute;
+  top: -33px;
+  right: -33px;
+  color: $color-default-black;
+  background-color: $color-default-white;
+  width: 100%;
+  max-width: 180px;
+  cursor: auto;
+
+  &::before {
+    content: "";
+    background-image: url("./images/svg/button-border.svg");
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 32px;
+    height: 16px;
+    transform: translateY(50%);
+  }
+
+  @include vp-767 {
+    top: -84px;
+    right: 28%;
+    transform: translateY(-100%) translateX(50%);
+  }
+}
+
+.main-info__subtext {
+  max-width: 810px;
+  margin: 0 auto;
+  color: $color-haiti;
+  text-align: center;
+  font-family: $ff-font-geologica;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+
+  @include vp-767 {
+    font-family: $ff-font-kizhich;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}
+
+.main-info__btn {
+  width: 240px;
+  color: $color-default-white;
+  background-color: $color-haiti;
+
+  &:hover {
+    background-color: map-get($corporate, corp-1);
+    color: $color-default-black;
+  }
+}
+
+.label__icon {
+  position: absolute;
+  column-gap: 10px;
+  background-color: $color-haiti;
+  color: $color-default-white;
+  cursor: auto;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  &--icon_1 {
+    top: 37%;
+    left: 5%;
+  }
+
+  &--icon_2 {
+    top: 21%;
+    left: 23%;
+
+    @include vp-767 {
+      display: inline-flex;
+      top: -4px;
+      left: 6%;
+    }
+  }
+
+  &--icon_3 {
+    top: 9%;
+    right: 11%;
+  }
+
+  &--icon_4 {
+    top: 52%;
+    right: 19%;
+  }
+}

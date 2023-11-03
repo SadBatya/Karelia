@@ -1,0 +1,20 @@
+.add-post-popup {
+  width: 100%;
+}
+
+.add-post-popup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.add-post-form__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.add-post-popup__add-btn {
+  width: 100%;
+}

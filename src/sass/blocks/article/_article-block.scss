@@ -1,0 +1,147 @@
+.article-block__article {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: background-color $trans-default;
+  display: flex;
+}
+
+.article-block__link {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.article-block__img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.article-block__title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all $trans-600;
+  overflow: hidden;
+  z-index: 10;
+  padding: 40px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.article-block--mod {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.article-block__label {
+  display: block;
+  max-width: fit-content;
+  padding: 8px 15px;
+  border-radius: 9999px;
+  background-color: rgba($color-default-white, 0.7);
+  margin-bottom: 10px;
+  transition: all $trans-default;
+}
+
+.article-block__title {
+  word-break: break-word;
+}
+
+.article-block__text {
+  color: $color-default-white;
+  font-family: $ff-font-geologica;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  transition: all 0.4s ease-out;
+  padding-top: 20px;
+}
+
+.article-block__article--hover-move {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 0 200px 150px black;
+    bottom: 0;
+    left: 0;
+  }
+
+  .article-block__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  @include hover-focus {
+    .article-block__text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .article-block__title-wrapper {
+      transform: translateY(-50px);
+    }
+  }
+
+  @include vp-1023 {
+    .article-block__text {
+      visibility: visible;
+      opacity: 1;
+      -webkit-line-clamp: 4;
+      display: box;
+      box-orient: vertical;
+      overflow: hidden;
+    }
+
+    @include hover-focus {
+      .article-block__text {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .article-block__title-wrapper {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.article-block__article--hover-bg {
+  @include hover-focus {
+    background-color: $color-default-white;
+
+    .article-block__label {
+      background-color: $color-solitude;
+    }
+  }
+
+  @include vp-1023 {
+    .article-block__text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @include hover-focus {
+      .article-block__text {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .article-block__title-wrapper {
+        transform: translateY(0);
+      }
+    }
+  }
+}

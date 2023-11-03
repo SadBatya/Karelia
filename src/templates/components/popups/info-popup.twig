@@ -1,0 +1,144 @@
+{% set listItems = [
+    {
+        title: '6,5 часов',
+        icon: '<svg class="advantage__item-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M5 20C5 28.2843 11.7157 35 20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.1 3.5"/>
+                <path d="M19.1667 13.3335V21.6668H27.5001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>',
+        text: 'Столько мы будем двигаться по данному маршруту',
+    },
+    {
+        title: '5 объектов',
+        icon: '<svg class="advantage__item-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                 fill="none">
+                <g clip-path="url(#clip0_783_2353)">
+                    <path d="M20 30.8332L15 28.3332L5 33.3332V11.6665L15 6.6665L25 11.6665L35 6.6665V19.1665" stroke="currentColor"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 6.6665V28.3332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 11.6665V20.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35.2015 33.5351C35.9009 32.8359 36.3773 31.945 36.5703 30.975C36.7634 30.0051 36.6644 28.9997 36.286 28.086C35.9077 27.1722 35.2668 26.3913 34.4445 25.8418C33.6222 25.2923 32.6555 24.999 31.6665 24.999C30.6775 24.999 29.7108 25.2923 28.8885 25.8418C28.0662 26.3913 27.4254 27.1722 27.047 28.086C26.6686 28.9997 26.5696 30.0051 26.7627 30.975C26.9557 31.945 27.4321 32.8359 28.1315 33.5351C28.8282 34.2334 30.0065 35.2768 31.6665 36.6668C33.4182 35.1834 34.5982 34.1401 35.2015 33.5351Z"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.6665 30V30.0167" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                    <clipPath>
+                        <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>',
+        text: 'Увидим на пути, которые поразят вас своей архитектурой',
+    },
+    {
+        icon: '<svg class="advantage__item-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M20 19.9795H35C35.0046 23.3368 33.8828 26.5985 31.8141 29.2427C29.7454 31.8869 26.8495 33.7607 23.5898 34.5641C20.3301 35.3676 16.8951 35.0542 13.8345 33.6743C10.774 32.2944 8.26484 29.9276 6.70869 26.9527C5.15255 23.9779 4.63937 20.567 5.25128 17.266C5.8632 13.965 7.56483 10.9647 10.0838 8.74526C12.6028 6.52585 15.7936 5.21566 19.1454 5.02438C22.4972 4.8331 25.8163 5.77179 28.5714 7.69022L20 19.9795Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.73 11.8045C23.8953 10.5217 21.6833 9.89168 19.448 10.0153C17.2128 10.1388 15.0837 11.0088 13.4015 12.486C11.7194 13.9632 10.5816 15.962 10.1703 18.1626C9.75893 20.3631 10.0979 22.638 11.1328 24.6231C12.1678 26.6081 13.8388 28.1885 15.8785 29.1112C17.9182 30.0338 20.2084 30.2454 22.3826 29.712C24.5568 29.1786 26.4891 27.9311 27.8702 26.1693C29.2513 24.4074 30.0012 22.2331 30 19.9944" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 27C19.1046 27 20 26.1046 20 25C20 23.8954 19.1046 23 18 23C16.8954 23 16 23.8954 16 25C16 26.1046 16.8954 27 18 27Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 19C17.1046 19 18 18.1046 18 17C18 15.8954 17.1046 15 16 15C14.8954 15 14 15.8954 14 17C14 18.1046 14.8954 19 16 19Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>',
+        title: '2 остановки',
+        text: 'Что бы подкрепиться, и двигаться дальше',
+    },
+] %}
+
+<div class="popup popup__hide js-info-popup">
+    <div class="popup__overlay js-overlay"></div>
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__header">
+                <h3 class="popup__title title-h3">Информация</h3>
+                <button class="btn popup__btn-close js-btn-close" aria-label="Закрыть модальное окно">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="popup__content">
+                <div class="info-popup">
+
+                    <div class="info__block-text">
+                        <h3>База отдыха Лумиваара Lumivaara</h3>
+                        <p>
+                            Культовое место среди любителей активного отдыха в Северном Приладожье. Помимо традиционных
+                            для Карелии
+                            охоты, рыбалки, посещения водопадов, сафари на квадроциклах летом и на снегоходах весной,
+                            Лумиваара в
+                            последние годы, словно магнитом, привлекает автолюбителей-экстремалов и неугомонных
+                            байкеров.
+                        </p>
+                    </div>
+
+                    <ul class="info__advantage advantage">
+                        {% for el in listItems %}
+                            <li class="advantage__item">
+                                {{ el.icon }}
+                                <h3 class="advantage__item-title">{{ el.title }}</h3>
+                                <p class="advantage__item-text">{{ el.text }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+
+                    <div class="info__map map">
+                        <div id="map-popup" class="map__wrapper" data-lat="61.596574" data-lon="30.317395" data-img="/assets/images/detail-page/detail-img-5.jpg"></div>
+                        <div class="map__info">
+                            <div class="map__info-item">
+                                <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M16.24 7.76L14.12 14.12L7.76 16.24L9.88 9.88L16.24 7.76Z"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="map__info-text">61.596574, 30.317395</p>
+                            </div>
+                            <div class="map__info-item">
+                                <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="map__info-text">ул. Центральная, д. 23., п. Метсямикли 186724 Россия</p>
+                            </div>
+                            <div class="map__info-item">
+                                <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M21.9618 17.2252V20.0854C21.9628 20.3509 21.9085 20.6138 21.8021 20.8571C21.6957 21.1004 21.5397 21.3188 21.344 21.4983C21.1484 21.6778 20.9174 21.8144 20.6658 21.8995C20.4143 21.9846 20.1478 22.0162 19.8833 21.9923C16.9495 21.6735 14.1313 20.671 11.6553 19.0653C9.35165 17.6014 7.39857 15.6484 5.93474 13.3447C4.32344 10.8574 3.32069 8.02557 3.00774 5.07855C2.98391 4.8149 3.01525 4.54917 3.09974 4.2983C3.18424 4.04742 3.32005 3.81688 3.49853 3.62136C3.677 3.42585 3.89424 3.26963 4.13639 3.16267C4.37855 3.05571 4.64032 3.00034 4.90505 3.00009H7.76532C8.22802 2.99554 8.67659 3.15939 9.02742 3.4611C9.37825 3.76282 9.6074 4.18181 9.67216 4.63998C9.79288 5.55533 10.0168 6.45408 10.3396 7.31909C10.4678 7.66035 10.4956 8.03122 10.4196 8.38777C10.3435 8.74431 10.1669 9.07159 9.91051 9.33082L8.69967 10.5417C10.0569 12.9286 12.0333 14.9049 14.4202 16.2622L15.631 15.0513C15.8903 14.795 16.2175 14.6184 16.5741 14.5423C16.9306 14.4663 17.3015 14.494 17.6428 14.6223C18.5078 14.9451 19.4065 15.169 20.3219 15.2897C20.785 15.355 21.208 15.5883 21.5104 15.9452C21.8127 16.302 21.9734 16.7576 21.9618 17.2252Z"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="map__info-text"><a href="tel:+79829998877">+7(000)000-00-00</a></p>
+                            </div>
+                            <div class="map__info-item">
+                                <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="map__info-text">site.ru</p>
+                            </div>
+                            <div class="map__info-item">
+                                <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="map__info-text"><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

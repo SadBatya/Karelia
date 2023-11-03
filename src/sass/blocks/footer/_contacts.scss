@@ -1,0 +1,41 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 160px;
+  row-gap: 15px;
+  text-align: right;
+
+  @include vp-767 {
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  column-gap: 20px;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-767 {
+    align-items: center;
+  }
+}
+
+.contacts__link {
+  border-bottom: 2px solid $color-transparent;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    border-bottom: 2px solid map-get($corporate, corp-1);
+  }
+}

@@ -1,0 +1,39 @@
+{% set listImg = [
+    {
+        img: "./assets/images/detail-page/detail-img-9.jpg",
+        img2x: "./assets/images/detail-page/detail-img-9.jpg"
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-10.jpg",
+        img2x: "./assets/images/detail-page/detail-img-10.jpg"
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-11.jpg",
+        img2x: "./assets/images/detail-page/detail-img-11.jpg"
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-12.jpg",
+        img2x: "./assets/images/detail-page/detail-img-12.jpg"
+    },
+] %}
+
+<div class="detail-block-grid-4">
+    <div class="detail-block-grid-4__wrapper">
+        <ul class="detail-block-grid-4__list">
+            {% for el in listImg %}
+            <li class="detail-block-grid-4__item">
+                <img
+                        class="detail-block-grid-4__item-img"
+                        width="669"
+                        height="800"
+                        src="{{ el.img }}"
+                        srcset="{{ el.img2x }} 2x"
+                        loading="lazy"
+                        decoding="auto"
+                        alt=""
+                >
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

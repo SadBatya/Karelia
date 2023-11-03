@@ -1,0 +1,33 @@
+<div class="sight__block swiper-filter swiper js-swiper-filter">
+    <div class="article-block article-block--max-6 swiper-wrapper {{ classMode }}">
+        {% for el in list %}
+            <div class="article-block__article swiper-slide article-block__article--hover-move {{ classModeArticle }}">
+                <a class="article-block__link" href="#">
+                    <img
+                            class="article-block__img"
+                            width="818"
+                            height="600"
+                            src="{{ el.img }}"
+                            srcset="{{ el.img2x }} 2x"
+                            alt=""
+                    >
+                    <div class="article-block__title-wrapper {{ classModePositionContent }}">
+                        {% if el.label %}
+                            <span class="article-block__label">{{ el.label }}</span>
+                        {% endif %}
+                        <div class="article-block__info-wrapper">
+                            {% if el.title %}
+                                <h3 class="article-block__title title-h3">{{ el.title }}</h3>
+                            {% endif %}
+
+                            {% if el.text %}
+                                <p class="article-block__text">{{ el.text }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+</div>

@@ -1,0 +1,49 @@
+{% set sliderList = [
+    {
+        img: "./assets/images/background/header-image/header-image.jpg",
+        img2x: "./assets/images/background/header-image/header-image@2x.jpg",
+        title: "Зеленые бесконечные леса"
+    },
+    {
+        img: "./assets/images/background/header-image/header-image.jpg",
+        img2x: "./assets/images/background/header-image/header-image@2x.jpg",
+        title: "Зеленые бесконечные леса"
+    },
+    {
+        img: "./assets/images/background/header-image/header-image.jpg",
+        img2x: "./assets/images/background/header-image/header-image@2x.jpg",
+        title: "Зеленые бесконечные леса"
+    },
+] %}
+
+<section>
+    <div>
+        <div class="swiper swiper-main js-main-swiper">
+            <div class="swiper-wrapper swiper-main__wrapper">
+                {% for slide in sliderList %}
+                    <div class="swiper-slide swiper-main__slide">
+                        <img
+                                class="swiper-main__slide-img"
+                                height="1648"
+                                width="750"
+                                src="{{ slide.img }}"
+                                srcset="{{ slide.img2x }}"
+                                alt=""
+                        >
+                        <div class="swiper-main__slide-content">
+                            <h3 class="swiper-main__slide-text title-h3">{{ slide.title }}</h3>
+                            <div class="swiper__button-container">
+                                <button class="swiper__button">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination swiper-main__pagination"></div>
+            <div class="swiper-main__navigation-wrapper container">
+                <div class="swiper-button-prev swiper__my-btn swiper__my-btn--prev"></div>
+                <div class="swiper-button-next swiper__my-btn swiper__my-btn--next"></div>
+            </div>
+        </div>
+    </div>
+</section>

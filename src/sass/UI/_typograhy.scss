@@ -1,0 +1,74 @@
+.title-h1 {
+  margin: 0;
+  font-family: $ff-font-kizhich;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.125rem;
+
+  @include vp-767 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  @include vp-374 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+.title-h2 {
+  font-family: $ff-font-kizhich;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  margin: 0;
+  margin-bottom: 50px;
+
+  @include vp-767 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 30px;
+  }
+
+  @include vp-374 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+  }
+}
+
+
+.title-h3 {
+  font-family: $ff-font-kizhich;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.text-kizhich {
+  font-family: $ff-font-kizhich;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+
+  @include vp-767 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.text-underline {
+  text-decoration: underline;
+  text-decoration-color: map-get($corporate, corp-1);
+}

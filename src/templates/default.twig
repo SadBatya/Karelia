@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="js-meta-viewport" name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+{# ВЫыпелить скрипт Яндекс карт от сюда и заменить ключ #}
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a6736d5a-e9ac-4dca-afcb-90cfbea0dd95&lang=ru_RU" type="text/javascript"></script>
+    <title>Karelia: {% block title %}{% endblock %}</title>
+    <link rel="preload" href="assets/fonts/geologica-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/geologica-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/gg-kizhich-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="assets/fonts/geologica-light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/geologica-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/gg-kizhich-bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-regular.woff" as="font" type="font/woff" crossorigin>
+
+    <link rel="stylesheet" href="./assets/template_styles.css">
+</head>
+<body>
+    <div class="wrapper">
+    {% include 'template-parts/header.twig' %}
+    <main>
+        {% block page %}{% endblock %}
+    </main>
+    {% include 'template-parts/footer.twig' %}
+    </div>
+
+{% include 'template-parts/popups.twig' %}
+
+<script src="./assets/js/vendor/inputmask.min.js"></script>
+<script src="./assets/js/vendor/perfect-scrollbar.min.js"></script>
+<script src="./assets/js/vendor/swiper-bundle.min.js"></script>
+<script src="./assets/js/build.js"></script>
+</body>
+</html>

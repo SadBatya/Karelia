@@ -1,0 +1,49 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 140px;
+  row-gap: 15px;
+
+  @include vp-767 {
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+.social__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}

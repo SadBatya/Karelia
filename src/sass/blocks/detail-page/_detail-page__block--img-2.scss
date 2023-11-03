@@ -1,0 +1,14 @@
+.detail-page__block--img-2 .detail-page__block-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+.detail-page__block--img-2 img {
+  object-fit: contain;
+}

@@ -1,0 +1,89 @@
+.more {
+  width: 100%;
+}
+
+.more__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 100px;
+  background-color: $color-haiti;
+  border-radius: 15px;
+  overflow: hidden;
+
+  @include vp-767 {
+    padding: 40px 15px;
+  }
+}
+
+.more__text {
+  color: $color-default-white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
+}
+
+.more__title {
+  color: $color-default-white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  margin-bottom: 50px;
+  text-align: center;
+
+  @include vp-767 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 37px;
+  }
+}
+
+.more__button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.more__btn {
+  padding: 13px 30px;
+  font-weight: 400;
+  text-align: center;
+
+  @include hover-focus {
+    background-color: map-get($corporate, corp-1);
+  }
+
+  @include vp-767 {
+    padding: 11px 30px;
+  }
+}
+
+//модификатор блока
+.more--mod .more__wrapper {
+  background-color: $color-solitude;
+
+  .more__text {
+    color: $color-haiti;
+  }
+
+  .more__title {
+    color: $color-haiti;
+  }
+
+  .more__btn {
+    background-color: $color-default-black;
+    color: $color-default-white;
+
+    @include hover-focus {
+      background-color: map-get($corporate, corp-1);
+      color: $color-default-black;
+    }
+  }
+}
+

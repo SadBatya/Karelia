@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="js-meta-viewport" name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a6736d5a-e9ac-4dca-afcb-90cfbea0dd95&lang=ru_RU" type="text/javascript"></script>
+    <title>Karelia: Главная страница</title>
+    <link rel="preload" href="assets/fonts/geologica-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/geologica-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/gg-kizhich-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="assets/fonts/geologica-light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/geologica-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/gg-kizhich-bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat-regular.woff" as="font" type="font/woff" crossorigin>
+
+    <link rel="stylesheet" href="./assets/template_styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__wrapper container">
+                <div class="header__logo logo">
+                    <a href="./index.html">
+                        <img class="logo__img" width="243" height="60" src="./assets/images/svg/logo-karelia.svg" alt="Логотип компании">
+                    </a>
+                </div>
+                <div class="header__content">
+                    <nav class="header__nav nav header__nav--close js-nav">
+                        <div class="header__nav-mobile-wrapper">
+                            <div class="header__nav-mobile">
+                                <h3 class="header__nav-mobile-title">Меню</h3>
+
+                                <button class="header__nav-button-close btn" aria-label="Закрыть меню">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="header__content-language language">
+                                <ul class="language__list">
+                                    <li>
+                                        <a class="language__link language__link--active" href="#">RU</a>
+                                    </li>
+                                    <li>
+                                        <a class="language__link" href="#">EN</a>
+                                    </li>
+                                    <li>
+                                        <a class="language__link" href="#">CH</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__item ">
+                                <a class="nav__item-link" href=#>
+                                    <span>О Карелии</span>
+                                </a>
+                            </li>
+                            <li class="nav__item  nav__item--close ">
+                                <a class="nav__item-link" href=#>
+                                    <span>Чем заняться?</span>
+                                    <svg class="nav__item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div class="nav__sub-list-wrapper">
+                                    <ul class="nav__sub-list">
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>События</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Спорт</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Достопримечательности</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Парки и места для прогулок</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Религия</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Отдых на природе</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Шопинг</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Оздоровление и медицина</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Развлечения</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="nav__item ">
+                                <a class="nav__item-link" href=#>
+                                    <span>Идеи и маршруты</span>
+                                </a>
+                            </li>
+                            <li class="nav__item ">
+                                <a class="nav__item-link" href=#>
+                                    <span>Где побывать?</span>
+                                </a>
+                            </li>
+                            <li class="nav__item ">
+                                <a class="nav__item-link" href=#>
+                                    <span>Ваши впечатления</span>
+                                </a>
+                            </li>
+                            <li class="nav__item ">
+                                <a class="nav__item-link" href=#>
+                                    <span>Лайфхаки и советы</span>
+                                </a>
+                            </li>
+                            <li class="nav__item  nav__item--close ">
+                                <a class="nav__item-link" href=#>
+                                    <span>Ещё</span>
+                                    <svg class="nav__item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div class="nav__sub-list-wrapper">
+                                    <ul class="nav__sub-list">
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Идеи и маршруты</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Где побывать</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Ваши впечатления</a>
+                                        </li>
+                                        <li class="nav__sub-item">
+                                            <a class="nav__sub-item-link" href=#>Лайфхаки и советы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                        <div class="header__content-btn-wrapper">
+                            <button class="header__content-btn btn btn--green js-add-post-btn">Добавить пост</button>
+                        </div>
+
+                    </nav>
+                    <div class="header__content-language language js-language">
+                        <button class="language__change-btn btn" type="button">RU</button>
+                        <div class="language__list-wrapper">
+                            <ul class="language__list">
+                                <li>
+                                    <a class="language__link language__link--active" href="#">RU</a>
+                                </li>
+                                <li>
+                                    <a class="language__link" href="#">EN</a>
+                                </li>
+                                <li>
+                                    <a class="language__link" href="#">CH</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <button class="header__content-btn btn btn--green js-add-post-btn">Добавить пост</button>
+                    <button class="header__burger-btn js-burger-button" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 12H17M3 6H21M3 18H21" stroke="#1C1B1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <div class="main-page layout">
+
+                <section>
+                    <div>
+                        <div class="swiper swiper-main js-main-swiper">
+                            <div class="swiper-wrapper swiper-main__wrapper">
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img class="swiper-main__slide-img" height="1648" width="750" src="./assets/images/background/header-image/header-image.jpg" srcset="./assets/images/background/header-image/header-image@2x.jpg" alt="">
+                                    <div class="swiper-main__slide-content">
+                                        <h3 class="swiper-main__slide-text title-h3">Зеленые бесконечные леса</h3>
+                                        <div class="swiper__button-container">
+                                            <button class="swiper__button">Подробнее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img class="swiper-main__slide-img" height="1648" width="750" src="./assets/images/background/header-image/header-image.jpg" srcset="./assets/images/background/header-image/header-image@2x.jpg" alt="">
+                                    <div class="swiper-main__slide-content">
+                                        <h3 class="swiper-main__slide-text title-h3">Зеленые бесконечные леса</h3>
+                                        <div class="swiper__button-container">
+                                            <button class="swiper__button">Подробнее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-main__slide">
+                                    <img class="swiper-main__slide-img" height="1648" width="750" src="./assets/images/background/header-image/header-image.jpg" srcset="./assets/images/background/header-image/header-image@2x.jpg" alt="">
+                                    <div class="swiper-main__slide-content">
+                                        <h3 class="swiper-main__slide-text title-h3">Зеленые бесконечные леса</h3>
+                                        <div class="swiper__button-container">
+                                            <button class="swiper__button">Подробнее</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-main__pagination"></div>
+                            <div class="swiper-main__navigation-wrapper container">
+                                <div class="swiper-button-prev swiper__my-btn swiper__my-btn--prev"></div>
+                                <div class="swiper-button-next swiper__my-btn swiper__my-btn--next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main-info">
+                    <div class="main-info__snake-wrapper">
+                        <svg class="main-info__snake-svg" width="1729" height="439" viewBox="0 0 1729 439" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 290.252C79.681 290.252 326.046 67.2448 404.004 47.4411C481.962 27.6373 466.354 124.828 473.779 150.334C500.355 241.627 626.745 68.1059 721.866 68.1059C745.555 68.1059 768.569 79.3638 779.581 101.686C825.667 195.108 638.74 249.353 668.889 363.44C674.127 383.261 680.71 394.537 695.593 408.644C770.536 479.679 821.112 310.969 916.977 291.544C1034.06 267.819 1104.48 370.902 1219.33 338.04C1310.82 311.862 1364.56 284.369 1417.03 205.01C1449.76 155.501 1462.8 87.6338 1511.78 51.3159C1560.8 14.9819 1584.14 12.9998 1642.72 13C1669.9 13.0001 1728 14.2915 1728 14.2915" stroke="white" stroke-width="25" />
+                        </svg>
+                    </div>
+                    <div class="main-info__wrapper container">
+                        <div class="main-info__box">
+                            <h2 class="main-info__title title-h2">Карелия</h2>
+                            <div class="main-info__inner-text">
+                                <div class="btn main-info__inner-label">
+                                    Вам понравится!
+                                </div>
+                                <p class="main-info__subtext">
+                                    Вдохновение от природы. <br>
+                                    Здесь каждый гость найдет занятие себе по душе.
+                                </p>
+                            </div>
+                            <button class="btn main-info__btn">Подробнее о Карелии</button>
+                        </div>
+
+                        <div class="btn label__icon label__icon--icon_1">
+                            34678
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.9997 4C16.2897 4 19.8627 6.429 22.6647 11.154L22.8847 11.533L22.9297 11.633L22.9597 11.716L22.9737 11.771L22.9877 11.853L22.9987 11.953V12.063L22.9847 12.174C22.9781 12.2111 22.9694 12.2479 22.9587 12.284L22.9197 12.392L22.8837 12.467L22.8677 12.497C20.1037 17.333 16.5677 19.877 12.3127 19.996L11.9997 20C7.60368 20 3.96268 17.451 1.13168 12.496C1.04539 12.3449 1 12.174 1 12C1 11.826 1.04539 11.6551 1.13168 11.504C3.96268 6.549 7.60368 4 11.9997 4ZM11.9997 9C11.204 9 10.441 9.31607 9.87836 9.87868C9.31575 10.4413 8.99968 11.2044 8.99968 12C8.99968 12.7956 9.31575 13.5587 9.87836 14.1213C10.441 14.6839 11.204 15 11.9997 15C12.7953 15 13.5584 14.6839 14.121 14.1213C14.6836 13.5587 14.9997 12.7956 14.9997 12C14.9997 11.2044 14.6836 10.4413 14.121 9.87868C13.5584 9.31607 12.7953 9 11.9997 9Z" fill="#6FF8B3" />
+                            </svg>
+                        </div>
+                        <div class="btn label__icon label__icon--icon_2">
+                            4381
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6.97913 3.07352C7.86419 2.92272 8.77181 2.97247 9.63509 3.21909C10.4984 3.46572 11.2953 3.90294 11.9671 4.49852L12.0041 4.53152L12.0381 4.50152C12.6793 3.93882 13.4331 3.51932 14.2493 3.27101C15.0655 3.02269 15.9252 2.95128 16.7711 3.06152L17.0171 3.09752C18.0834 3.28163 19.0801 3.75068 19.9016 4.45499C20.7231 5.15931 21.3388 6.07267 21.6836 7.09836C22.0283 8.12405 22.0893 9.22388 21.86 10.2814C21.6307 11.3389 21.1197 12.3147 20.3811 13.1055L20.2011 13.2905L20.1531 13.3315L12.7031 20.7105C12.5312 20.8807 12.3034 20.9828 12.062 20.9978C11.8206 21.0129 11.5819 20.94 11.3901 20.7925L11.2961 20.7105L3.80313 13.2885C3.00935 12.5162 2.44483 11.5392 2.17209 10.4658C1.89935 9.39238 1.92903 8.26442 2.25785 7.20684C2.58666 6.14926 3.20179 5.20332 4.03509 4.4738C4.86839 3.74427 5.88735 3.25962 6.97913 3.07352Z" fill="#CD1818" />
+                            </svg>
+                        </div>
+                        <div class="btn label__icon label__icon--icon_3">
+                            2164
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8.24561 7.33992L1.85751 8.2652L1.74436 8.28821C1.57308 8.33363 1.41694 8.42366 1.29188 8.54909C1.16682 8.67452 1.07732 8.83087 1.03252 9.00216C0.987723 9.17344 0.989232 9.35355 1.03689 9.52406C1.08455 9.69458 1.17666 9.8494 1.3038 9.97273L5.93167 14.4731L4.84029 20.8301L4.82727 20.9401C4.81679 21.1171 4.85357 21.2937 4.93386 21.4518C5.01414 21.6099 5.13505 21.7438 5.28419 21.8399C5.43333 21.936 5.60535 21.9907 5.78263 21.9985C5.95992 22.0063 6.1361 21.967 6.29313 21.8844L12.0064 18.8835L17.7066 21.8844L17.8067 21.9304C17.972 21.9954 18.1516 22.0154 18.3272 21.9882C18.5027 21.961 18.6678 21.8876 18.8056 21.7756C18.9434 21.6636 19.0489 21.517 19.1112 21.3509C19.1736 21.1847 19.1906 21.005 19.1605 20.8301L18.0681 14.4731L22.6979 9.97173L22.776 9.8867C22.8876 9.74943 22.9608 9.58506 22.988 9.41035C23.0153 9.23564 22.9957 9.05682 22.9313 8.89213C22.8669 8.72743 22.76 8.58273 22.6213 8.47278C22.4827 8.36283 22.3174 8.29155 22.1422 8.2662L15.7541 7.33992L12.8985 1.55814C12.8159 1.39062 12.688 1.24956 12.5292 1.15092C12.3705 1.05228 12.1873 1 12.0004 1C11.8134 1 11.6302 1.05228 11.4715 1.15092C11.3128 1.24956 11.1849 1.39062 11.1022 1.55814L8.24561 7.33992Z" fill="#8BCC00" />
+                            </svg>
+                        </div>
+                        <div class="btn label__icon label__icon--icon_4">
+                            1289
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19.48 12.3702C17.82 8.05023 11.65 8.00023 13.99 0.990234C9.52 3.00023 5.98 8.17023 9.48 15.0002C4.53 12.9202 6.7 7.71023 6.7 7.71023C6.7 7.71023 4 9.37024 4 14.3902C4.38 19.9902 9.11 21.7102 10.81 21.9302C13.24 22.2402 15.87 21.7902 17.76 20.0602C19.84 18.1302 20.6 15.0502 19.48 12.3702ZM10.2 17.4002C11.64 17.0502 12.38 16.0102 12.58 15.0902C12.91 13.6602 11.62 12.2602 12.49 10.0002C12.82 11.8702 15.76 13.0402 15.76 15.0802C15.84 17.6102 13.1 19.7802 10.2 17.4002Z" fill="#FA6C17" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </section>
+                <div class="main-page__sight">
+                    <section class="sight container sight--mode">
+                        <div class="sight__wrapper">
+                            <div class="sight__block swiper-filter swiper js-swiper-filter">
+                                <div class="article-block article-block--max-6 swiper-wrapper ">
+                                    <div class="article-block__article swiper-slide article-block__article--hover-move article-block__article--hover-move">
+                                        <a class="article-block__link" href="#">
+                                            <img class="article-block__img" width="818" height="600" src="./assets/images/content-article/img-10.jpg" srcset="./assets/images/content-article/img-10@2x.jpg 2x" alt="">
+                                            <div class="article-block__title-wrapper article-block--mod">
+                                                <span class="article-block__label">Кухня</span>
+                                                <div class="article-block__info-wrapper">
+                                                    <h3 class="article-block__title title-h3">Гастрономическое путешествие в Карелию</h3>
+
+                                                    <p class="article-block__text">Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="article-block__article swiper-slide article-block__article--hover-move article-block__article--hover-move">
+                                        <a class="article-block__link" href="#">
+                                            <img class="article-block__img" width="818" height="600" src="./assets/images/content-article/img-11.jpg" srcset="./assets/images/content-article/img-11@2x.jpg 2x" alt="">
+                                            <div class="article-block__title-wrapper article-block--mod">
+                                                <span class="article-block__label">Достопримечательности</span>
+                                                <div class="article-block__info-wrapper">
+                                                    <h3 class="article-block__title title-h3">Weekend в Петрозаводске: что посмотреть за 2 дня</h3>
+
+                                                    <p class="article-block__text">Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="article-block__article swiper-slide article-block__article--hover-move article-block__article--hover-move">
+                                        <a class="article-block__link" href="#">
+                                            <img class="article-block__img" width="818" height="600" src="./assets/images/content-article/img-12.jpg" srcset="./assets/images/content-article/img-12@2x.jpg 2x" alt="">
+                                            <div class="article-block__title-wrapper article-block--mod">
+                                                <span class="article-block__label">Культурная жизнь</span>
+                                                <div class="article-block__info-wrapper">
+                                                    <h3 class="article-block__title title-h3">Зеленый город. Лучшие локации для прогулок</h3>
+
+                                                    <p class="article-block__text">Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="article-block__article swiper-slide article-block__article--hover-move article-block__article--hover-move">
+                                        <a class="article-block__link" href="#">
+                                            <img class="article-block__img" width="818" height="600" src="./assets/images/content-article/img-21-f.jpg" srcset="./assets/images/content-article/img-21-f@2x.jpg 2x" alt="">
+                                            <div class="article-block__title-wrapper article-block--mod">
+                                                <span class="article-block__label">Религия</span>
+                                                <div class="article-block__info-wrapper">
+                                                    <h3 class="article-block__title title-h3">Исторические достопримечательности Карелии</h3>
+
+                                                    <p class="article-block__text">Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="article-block__article swiper-slide article-block__article--hover-move article-block__article--hover-move">
+                                        <a class="article-block__link" href="#">
+                                            <img class="article-block__img" width="818" height="600" src="./assets/images/content-article/img-22-f.jpg" srcset="./assets/images/content-article/img-22-f@2x.jpg 2x" alt="">
+                                            <div class="article-block__title-wrapper article-block--mod">
+                                                <span class="article-block__label">Спорт</span>
+                                                <div class="article-block__info-wrapper">
+                                                    <h3 class="article-block__title title-h3">Активные виды спорта и приключения в Карелии</h3>
+
+                                                    <p class="article-block__text">Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="article-block__article swiper-slide article-block__article--hover-move article-block__article--hover-move">
+                                        <a class="article-block__link" href="#">
+                                            <img class="article-block__img" width="818" height="600" src="./assets/images/content-article/img-23-f.jpg" srcset="./assets/images/content-article/img-23-f@2x.jpg 2x" alt="">
+                                            <div class="article-block__title-wrapper article-block--mod">
+                                                <span class="article-block__label">Культура</span>
+                                                <div class="article-block__info-wrapper">
+                                                    <h3 class="article-block__title title-h3">Золотая пора - лучшие места для отдыха осенью</h3>
+
+                                                    <p class="article-block__text">Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="more container ">
+                        <div class="more__wrapper">
+                            <span class="more__text">
+                                А также
+                            </span>
+                            <h2 class="more__title">Загляните и в другие наши разделы</h2>
+                            <div class="more__button-list">
+                                <a class="btn more__btn" href="#">
+                                    События
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Достопримечательности
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Религия
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Шопинг
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Развлечения
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Спорт
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Парки и места для прогулок
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Отдых на природе
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Оздоровление и медицина
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="main-page__routes">
+
+                    <section class="routes">
+                        <div class="routes__wrapper container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="routes__container">
+                                <h2 class="routes__title title-h2">Маршруты</h2>
+                                <div class="routes__list-wrapper">
+                                    <div class="routes__list">
+                                        <div class="routes__list-content ">
+                                            <div class="routes__tag-list">
+                                                <div class="btn routes__tag-item">
+                                                    <svg class="routes__tag-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Приладожье</span>
+                                                </div>
+                                                <div class="btn routes__tag-item">
+                                                    <svg class="routes__tag-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.1 3.5" />
+                                                        <path d="M11.5 8V13H16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>6 часов</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="routes__name title-h3">3 святыни <br> севера</h3>
+                                            <p class="routes__description">
+                                                Северная Карелия богата историческими и культурными святынями, которые отражают дух этого уникального региона. Эти святыни представляют историческое, культурное и религиозное богатство Северной Карелии, привлекая путешественников и исследователей со всего мира.
+                                            </p>
+                                        </div>
+                                        <div class="routes__img-list">
+                                            <div class="img__small img__small--left">
+                                                <img width="350" height="250" src="./assets/images/img/routes-img/Img20.jpg" srcset="./assets/images/img/routes-img/Img20@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                            <div class="img__big">
+                                                <img width="809" height="500" src="./assets/images/img/routes-img/Img19.jpg" srcset="./assets/images/img/routes-img/Img19@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                            <div class="img__small img__small--right">
+                                                <img width="350" height="250" src="./assets/images/img/routes-img/Img21.jpg" srcset="./assets/images/img/routes-img/Img21@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                        </div>
+                                        <div class="routes__img-list-btn-wrapper">
+                                            <a class="btn btn--green" href="#">Информация о локации</a>
+                                        </div>
+                                        <a class="routes__big-link" href="#"></a>
+                                    </div>
+                                    <div class="routes__list">
+                                        <div class="routes__list-content routes__list-content--reverse">
+                                            <div class="routes__tag-list">
+                                                <div class="btn routes__tag-item">
+                                                    <svg class="routes__tag-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Ладога</span>
+                                                </div>
+                                                <div class="btn routes__tag-item">
+                                                    <svg class="routes__tag-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.1 3.5" />
+                                                        <path d="M11.5 8V13H16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>3.5 часа</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="routes__name title-h3">Приключение <br> вокруг Ладоги</h3>
+                                            <p class="routes__description">
+                                                Живописные берега и холмы. Невероятные виды и впечатления. Уединенные пляжи, голубое небо и кристально чистая вода создают идеальное место для отдыха и водных развлечений.
+                                            </p>
+                                        </div>
+                                        <div class="routes__img-list">
+                                            <div class="img__small img__small--left">
+                                                <img width="350" height="250" src="./assets/images/img/routes-img/Img23.jpg" srcset="./assets/images/img/routes-img/Img23@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                            <div class="img__big">
+                                                <img width="809" height="500" src="./assets/images/img/routes-img/Img22.jpg" srcset="./assets/images/img/routes-img/Img22@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                            <div class="img__small img__small--right">
+                                                <img width="350" height="250" src="./assets/images/img/routes-img/Img24.jpg" srcset="./assets/images/img/routes-img/Img24@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                        </div>
+                                        <div class="routes__img-list-btn-wrapper">
+                                            <a class="btn btn--green" href="#">Информация о локации</a>
+                                        </div>
+                                        <a class="routes__big-link" href="#"></a>
+                                    </div>
+                                    <div class="routes__list">
+                                        <div class="routes__list-content ">
+                                            <div class="routes__tag-list">
+                                                <div class="btn routes__tag-item">
+                                                    <svg class="routes__tag-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>Ладога</span>
+                                                </div>
+                                                <div class="btn routes__tag-item">
+                                                    <svg class="routes__tag-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.1 3.5" />
+                                                        <path d="M11.5 8V13H16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span>3.5 часа</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="routes__name title-h3">Онежское <br> «море»</h3>
+                                            <p class="routes__description">
+                                                Природное великолепие, известное как «море», которое является одним из самых крупных озер в Европе и одним из наиболее значимых природных и культурных богатств России.
+                                            </p>
+                                        </div>
+                                        <div class="routes__img-list">
+                                            <div class="img__small img__small--left">
+                                                <img width="350" height="250" src="./assets/images/img/routes-img/Img38.jpg" srcset="./assets/images/img/routes-img/Img38@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                            <div class="img__big">
+                                                <img width="809" height="500" src="./assets/images/img/routes-img/Img37.jpg" srcset="./assets/images/img/routes-img/Img37@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                            <div class="img__small img__small--right">
+                                                <img width="350" height="250" src="./assets/images/img/routes-img/Img39.jpg" srcset="./assets/images/img/routes-img/Img39@2x.jpg" alt="photo" loading="lazy" decoding="auto">
+                                            </div>
+                                        </div>
+                                        <div class="routes__img-list-btn-wrapper">
+                                            <a class="btn btn--green" href="#">Информация о локации</a>
+                                        </div>
+                                        <a class="routes__big-link" href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="more container more--mod">
+                        <div class="more__wrapper">
+                            <span class="more__text">
+                                А также
+                            </span>
+                            <h2 class="more__title">Загляните и в другие наши маршруты</h2>
+                            <div class="more__button-list">
+                                <a class="btn more__btn" href="#">
+                                    События
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Достопримечательности
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Религия
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Шопинг
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Развлечения
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Спорт
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Парки и места для прогулок
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Отдых на природе
+                                </a>
+                                <a class="btn more__btn" href="#">
+                                    Оздоровление и медицина
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <section class="swiper__footer swiper-footer--mod">
+                    <div class="swiper__inner swiper__inner--right">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-25.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-25@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-26.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-26@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-27.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-27@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-28.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-28@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-29.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-29@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-30.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-30@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-31.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-31@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-32.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-32@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-33.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-33@2x.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-34.jpg" srcset="./assets/images/img/slider-image-header/Img-slider-34@2x.jpg" alt="photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper__inner swiper__inner--left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-25.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-26.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-27.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-28.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-29.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-30.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-31.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-32.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-33.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide swiper-slide--height">
+                                <img src="./assets/images/img/slider-image-header/Img-slider-34.jpg" alt="photo">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__wrapper">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <a href="./index.html">
+                            <img class="footer__logo-img" src="./assets/images/svg/logo.svg" alt="Логотип компании">
+                        </a>
+                    </div>
+                    <div class="footer__copyright copyright">
+                        <span>© 2023 Карелия. </span>
+                        <span>Все права защищены</span>
+                    </div>
+                </div>
+
+                <nav class="footer__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__item-link" href=#>О Карелии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href=#>Чем заняться?</a>
+                            <svg class="nav__item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href=#>Идеи и маршруты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href=#>Где побывать?</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href=#>Ваши впечатления</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__item-link" href=#>Лайфхаки и советы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__right">
+                    <div class="social">
+                        <h3 class="social__title">Соц.сети</h3>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#" aria-label="vkontacte">
+                                    <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <rect width="40" height="40" rx="20" fill="#0077FF" />
+                                            <path d="M21.398 27C13.6208 27 9.18483 21.7447 9 13H12.8957C13.0237 19.4184 15.8957 22.1371 18.1706 22.6977V13H21.8388V18.5355C24.0852 18.2973 26.4454 15.7748 27.2416 13H30.9098C30.6098 14.4391 30.0118 15.8017 29.1531 17.0025C28.2944 18.2033 27.1935 19.2166 25.9194 19.979C27.3416 20.6756 28.5978 21.6615 29.6051 22.8717C30.6124 24.082 31.3478 25.489 31.7629 27H27.725C27.3524 25.6876 26.5951 24.5128 25.548 23.6228C24.5009 22.7328 23.2106 22.1673 21.8388 21.997V27H21.398Z" fill="white" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" aria-label="telegram">
+                                    <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <rect width="40" height="40" rx="20" fill="#27A6E5" />
+                                            <path d="M28.6589 12.6022L25.5492 28.2923C25.5492 28.2923 25.1142 29.3801 23.9189 28.8584L16.7441 23.3526L16.7109 23.3364C17.68 22.4654 25.1952 15.7027 25.5237 15.3961C26.0321 14.9214 25.7165 14.6387 25.1261 14.9974L14.0252 22.053L9.74252 20.6108C9.74252 20.6108 9.06856 20.3708 9.00372 19.8491C8.93803 19.3265 9.76471 19.0439 9.76471 19.0439L27.2239 12.1889C27.2239 12.1889 28.6589 11.5579 28.6589 12.6022Z" fill="#FEFEFE" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <h3 class="contacts__title">Контакты</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup popup--grid-3-row popup__hide js-add-post-popup">
+        <div class="popup__overlay js-overlay"></div>
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__header">
+                    <h3 class="popup__title title-h3">Добавить пост</h3>
+                    <button class="btn popup__btn-close js-btn-close" aria-label="Закрыть модальное окно">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="popup__content">
+                    <div class="add-post-popup">
+                        <form class="add-post-popup__form add-post-form js-add-post-form" action="">
+                            <div>
+                                <div class="add-post-popup__inner-content">
+                                    <div class="add-post-popup__rules post-rules">
+                                        <details class="post-rules__details">
+                                            <summary class="post-rules__summary">
+                                                <span>Правила добавления поста</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </summary>
+                                            <div class="post-rules__content">
+                                                <div>
+                                                    <h4>1. Уникальный и полезный контент:</h4>
+                                                    <p>Все посты должны содержать оригинальный и полезный контент для аудитории. Избегайте копирования материалов с других источников.</p>
+                                                </div>
+                                                <div>
+                                                    <h4>2. Тематика и целевая аудитория:</h4>
+                                                    <p>Убедитесь, что контент соответствует тематике вашего сайта и интересам вашей целевой аудитории.</p>
+                                                </div>
+                                                <div>
+                                                    <h4>1. Качественное изображение:</h4>
+                                                    <p>Каждый пост должен сопровождаться высококачественным и релевантным изображением, привлекающим внимание читателей.</p>
+                                                </div>
+                                            </div>
+                                        </details>
+
+                                    </div>
+
+                                </div>
+                                <div class="add-post-form__content">
+                                    <fieldset class="add-post-form__fieldset add-post-form__fieldset--main">
+                                        <div class="add-post-form__wrapper-block">
+                                            <input class="add-post-form__input js-input-text" type="text" name="name" id="inputName" placeholder="" required>
+                                            <label class="add-post-form__label" for="inputName">Ваше имя<sup>*</sup></label>
+                                        </div>
+                                        <div class="add-post-form__wrapper-block">
+                                            <input class="add-post-form__input js-input-text" type="text" name="surname" id="inputSurname" placeholder="" required>
+                                            <label class="add-post-form__label" for="inputSurname">Ваша фамилия<sup>*</sup></label>
+                                        </div>
+                                        <div class="add-post-form__wrapper-block">
+                                            <input class="add-post-form__input js-input-email" type="email" name="email" id="inputEmail" placeholder="" required>
+                                            <label class="add-post-form__label" for="inputEmail">Ваш email<sup>*</sup></label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="add-post-form__fieldset">
+                                        <div class="add-post-form__wrapper-block">
+                                            <textarea class="add-post-form__input-textarea js-input-text" id="textAreaPost" placeholder="Начните вводить..." required></textarea>
+                                            <label class="add-post-form__label" for="textAreaPost">Текст публикации<sup>*</sup></label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="add-post-form__fieldset add-photo js-add-photo">
+                                        <div class="add-post-form__wrapper-block add-photo__wrapper">
+                                            <label class="add-post-form__label add-photo__label">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="">Загрузите файл</span>
+                                                <span>Фотографии в формате .jpg, .jpeg, .png, и не больше 5 МБ</span>
+                                                <input class="visually-hidden js-photo-file" name="files[]" accept="image" multiple type="file">
+                                            </label>
+
+                                        </div>
+
+                                        <ul class="add-photo__list js-files-photo-list">
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="add-post-popup__add-btn-wrapper">
+                                <button class="btn btn--green add-post-popup__add-btn" type="submit">Добавить пост</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="popup__footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup__hide js-info-popup">
+        <div class="popup__overlay js-overlay"></div>
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__header">
+                    <h3 class="popup__title title-h3">Информация</h3>
+                    <button class="btn popup__btn-close js-btn-close" aria-label="Закрыть модальное окно">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="popup__content">
+                    <div class="info-popup">
+
+                        <div class="info__block-text">
+                            <h3>База отдыха Лумиваара Lumivaara</h3>
+                            <p>
+                                Культовое место среди любителей активного отдыха в Северном Приладожье. Помимо традиционных
+                                для Карелии
+                                охоты, рыбалки, посещения водопадов, сафари на квадроциклах летом и на снегоходах весной,
+                                Лумиваара в
+                                последние годы, словно магнитом, привлекает автолюбителей-экстремалов и неугомонных
+                                байкеров.
+                            </p>
+                        </div>
+
+                        <ul class="info__advantage advantage">
+                            <li class="advantage__item">
+                                <svg class="advantage__item-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M5 20C5 28.2843 11.7157 35 20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.1 3.5" />
+                                    <path d="M19.1667 13.3335V21.6668H27.5001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <h3 class="advantage__item-title">6,5 часов</h3>
+                                <p class="advantage__item-text">Столько мы будем двигаться по данному маршруту</p>
+                            </li>
+                            <li class="advantage__item">
+                                <svg class="advantage__item-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <g clip-path="url(#clip0_783_2353)">
+                                        <path d="M20 30.8332L15 28.3332L5 33.3332V11.6665L15 6.6665L25 11.6665L35 6.6665V19.1665" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 6.6665V28.3332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25 11.6665V20.8332" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M35.2015 33.5351C35.9009 32.8359 36.3773 31.945 36.5703 30.975C36.7634 30.0051 36.6644 28.9997 36.286 28.086C35.9077 27.1722 35.2668 26.3913 34.4445 25.8418C33.6222 25.2923 32.6555 24.999 31.6665 24.999C30.6775 24.999 29.7108 25.2923 28.8885 25.8418C28.0662 26.3913 27.4254 27.1722 27.047 28.086C26.6686 28.9997 26.5696 30.0051 26.7627 30.975C26.9557 31.945 27.4321 32.8359 28.1315 33.5351C28.8282 34.2334 30.0065 35.2768 31.6665 36.6668C33.4182 35.1834 34.5982 34.1401 35.2015 33.5351Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M31.6665 30V30.0167" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="40" height="40" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h3 class="advantage__item-title">5 объектов</h3>
+                                <p class="advantage__item-text">Увидим на пути, которые поразят вас своей архитектурой</p>
+                            </li>
+                            <li class="advantage__item">
+                                <svg class="advantage__item-svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M20 19.9795H35C35.0046 23.3368 33.8828 26.5985 31.8141 29.2427C29.7454 31.8869 26.8495 33.7607 23.5898 34.5641C20.3301 35.3676 16.8951 35.0542 13.8345 33.6743C10.774 32.2944 8.26484 29.9276 6.70869 26.9527C5.15255 23.9779 4.63937 20.567 5.25128 17.266C5.8632 13.965 7.56483 10.9647 10.0838 8.74526C12.6028 6.52585 15.7936 5.21566 19.1454 5.02438C22.4972 4.8331 25.8163 5.77179 28.5714 7.69022L20 19.9795Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M25.73 11.8045C23.8953 10.5217 21.6833 9.89168 19.448 10.0153C17.2128 10.1388 15.0837 11.0088 13.4015 12.486C11.7194 13.9632 10.5816 15.962 10.1703 18.1626C9.75893 20.3631 10.0979 22.638 11.1328 24.6231C12.1678 26.6081 13.8388 28.1885 15.8785 29.1112C17.9182 30.0338 20.2084 30.2454 22.3826 29.712C24.5568 29.1786 26.4891 27.9311 27.8702 26.1693C29.2513 24.4074 30.0012 22.2331 30 19.9944" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18 27C19.1046 27 20 26.1046 20 25C20 23.8954 19.1046 23 18 23C16.8954 23 16 23.8954 16 25C16 26.1046 16.8954 27 18 27Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16 19C17.1046 19 18 18.1046 18 17C18 15.8954 17.1046 15 16 15C14.8954 15 14 15.8954 14 17C14 18.1046 14.8954 19 16 19Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <h3 class="advantage__item-title">2 остановки</h3>
+                                <p class="advantage__item-text">Что бы подкрепиться, и двигаться дальше</p>
+                            </li>
+                        </ul>
+
+
+                        <div class="info__map map">
+                            <div id="map-popup" class="map__wrapper" data-lat="61.596574" data-lon="30.317395" data-img="/assets/images/detail-page/detail-img-5.jpg"></div>
+                            <div class="map__info">
+                                <div class="map__info-item">
+                                    <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.24 7.76L14.12 14.12L7.76 16.24L9.88 9.88L16.24 7.76Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="map__info-text">61.596574, 30.317395</p>
+                                </div>
+                                <div class="map__info-item">
+                                    <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="map__info-text">ул. Центральная, д. 23., п. Метсямикли 186724 Россия</p>
+                                </div>
+                                <div class="map__info-item">
+                                    <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21.9618 17.2252V20.0854C21.9628 20.3509 21.9085 20.6138 21.8021 20.8571C21.6957 21.1004 21.5397 21.3188 21.344 21.4983C21.1484 21.6778 20.9174 21.8144 20.6658 21.8995C20.4143 21.9846 20.1478 22.0162 19.8833 21.9923C16.9495 21.6735 14.1313 20.671 11.6553 19.0653C9.35165 17.6014 7.39857 15.6484 5.93474 13.3447C4.32344 10.8574 3.32069 8.02557 3.00774 5.07855C2.98391 4.8149 3.01525 4.54917 3.09974 4.2983C3.18424 4.04742 3.32005 3.81688 3.49853 3.62136C3.677 3.42585 3.89424 3.26963 4.13639 3.16267C4.37855 3.05571 4.64032 3.00034 4.90505 3.00009H7.76532C8.22802 2.99554 8.67659 3.15939 9.02742 3.4611C9.37825 3.76282 9.6074 4.18181 9.67216 4.63998C9.79288 5.55533 10.0168 6.45408 10.3396 7.31909C10.4678 7.66035 10.4956 8.03122 10.4196 8.38777C10.3435 8.74431 10.1669 9.07159 9.91051 9.33082L8.69967 10.5417C10.0569 12.9286 12.0333 14.9049 14.4202 16.2622L15.631 15.0513C15.8903 14.795 16.2175 14.6184 16.5741 14.5423C16.9306 14.4663 17.3015 14.494 17.6428 14.6223C18.5078 14.9451 19.4065 15.169 20.3219 15.2897C20.785 15.355 21.208 15.5883 21.5104 15.9452C21.8127 16.302 21.9734 16.7576 21.9618 17.2252Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="map__info-text"><a href="tel:+79829998877">+7(000)000-00-00</a></p>
+                                </div>
+                                <div class="map__info-item">
+                                    <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="map__info-text">site.ru</p>
+                                </div>
+                                <div class="map__info-item">
+                                    <svg class="map__info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="map__info-text"><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/vendor/inputmask.min.js"></script>
+    <script src="./assets/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="./assets/js/build.js"></script>
+</body>
+
+</html>

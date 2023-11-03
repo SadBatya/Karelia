@@ -1,0 +1,70 @@
+.filter-section {
+  width: 100%;
+  max-width: 380px;
+  position: absolute;
+  top: 40px;
+  z-index: 100;
+  transition: all $trans-default;
+  max-height: 300px;
+  padding-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.filter-section__wrapper {
+  padding: 5px 30px;
+  background-color: $color-default-white;
+  border-radius: 15px;
+  box-shadow: $shadow-3;
+}
+
+.filter-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  max-height: 300px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: $color-scrollbar;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+
+.filter-section__item {
+  display: flex;
+  align-items: center;
+}
+
+.filter-section__link {
+  padding: 13px 15px;
+  min-height: 46px;
+  transition: all $trans-default;
+
+  &:hover,
+  &:focus-visible {
+    color: map-get($corporate, corp-2);
+  }
+}

@@ -1,0 +1,167 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 400;
+
+  @include vp-1023 {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  min-height: 46px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 30px;
+  transition: $trans-default;
+
+  @include hover-focus {
+    background-color: map-get($gray, gray-1);
+
+    .nav__item-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  @include vp-1023 {
+    flex-wrap: wrap;
+  }
+
+  .nav__sub-list-wrapper {
+    display: none;
+    padding-top: 27px;
+
+    @include vp-1023 {
+      display: block;
+      width: 100%;
+      padding-top: 0;
+      position: static;
+      top: auto;
+      left: auto;
+    }
+  }
+
+  @include vp-1024 {
+    &:hover,
+    &:focus-within {
+      .nav__sub-list-wrapper {
+        position: absolute;
+        top: 46px;
+        left: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+.nav__item--close .nav__sub-list-wrapper {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.nav__item--open {
+  @include vp-1023 {
+    .nav__sub-list {
+      width: auto;
+      column-count: unset;
+      border-radius: unset;
+      background-color: transparent;
+    }
+  }
+}
+
+.nav__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 2rem;
+
+  @include vp-1023 {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    min-height: 46px;
+  }
+}
+
+.nav__item-icon {
+  min-width: 24px;
+  min-height: 24px;
+  object-fit: cover;
+  transition: $trans-default;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.nav__sub-list {
+  width: 578px;
+  column-count: 2;
+  margin: 0;
+  list-style-type: none;
+  box-shadow: $shadow-3;
+  background-color: $color-default-white;
+  padding: 20px;
+  border-radius: 15px;
+
+  @include vp-1023 {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.nav__sub-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 30px;
+  border-radius: 30px;
+  transition: $trans-default;
+
+  @include hover-focus {
+    background-color: map-get($gray, gray-1);
+  }
+}
+
+.nav__sub-item-link {
+  display: flex;
+  width: max-content;
+  max-width: 200px;
+}
+
+.header__nav .nav__list > li:last-child {
+  display: none;
+
+  @include vp-1659 {
+    display: flex;
+  }
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.header__nav .nav__list > li:not(:last-child):not(:first-child):not(:nth-of-type(2)) {
+  @include vp-1659 {
+    display: none;
+  }
+
+  @include vp-1023 {
+    display: flex;
+  }
+}

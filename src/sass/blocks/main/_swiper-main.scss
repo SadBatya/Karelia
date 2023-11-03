@@ -1,0 +1,155 @@
+.swiper-main {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-solitude;
+}
+
+.swiper-main .swiper-slide {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-main__slide-content {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 0 140px;
+  max-width: 1728px;
+
+  @include vp-767 {
+    padding: 0 20px;
+  }
+}
+
+.swiper-main__slide-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-main__slide-text {
+  text-shadow: 0 3px 5px map-get($tone-day, black);
+  font-size: 4rem;
+  line-height: 4.5rem;
+
+  @include vp-767 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+.swiper__button-container {
+  border: 5px solid map-get($tone-night, white-2);
+  border-radius: 30px;
+  width: 160px;
+}
+
+.swiper-main__navigation-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  top: -58%;
+}
+
+.swiper-main .swiper__my-btn {
+  position: static;
+  width: 64px;
+  height: 46px;
+  background-image: url("./images/svg/arrow-right.svg");
+  background-color: map-get($tone-night, white-2);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: $shadow-3;
+  border-radius: 30px;
+  padding: 11px 20px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: all $trans-default;
+  top: auto;
+  margin: 0;
+
+  &--prev {
+    transform: rotate(180deg);
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  &:hover {
+    background-color: map-get($tone-night, white-3);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.swiper-main .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-main .swiper-button-next::after {
+  display: none;
+}
+
+.swiper-main .swiper__button {
+  width: 150px;
+  display: flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: none;
+  background-color: map-get($corporate, corp-1);
+  transition: all $trans-default;
+  cursor: pointer;
+  color: $color-haiti;
+
+  &:hover {
+    background: $color-default-black;
+    border-color: map-get($tone-night, white-3);
+    color: $color-default-white;
+  }
+}
+
+.swiper-main .swiper-pagination-bullet {
+  position: relative;
+  opacity: 1;
+  background-color: rgba($color-default-white, 0.4);
+  width: 14px;
+  height: 14px;
+  transition: all $trans-default;
+}
+
+.swiper-main .swiper-pagination-bullet-active {
+  background-color: rgba($color-default-white, 0.8);
+  transition: all $trans-default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: $color-haiti;
+    border-radius: 100%;
+  }
+}

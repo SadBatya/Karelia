@@ -1,0 +1,15 @@
+.detail-swiper-slide {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.detail-swiper-slide__img {
+  width: 669px;
+  height: 500px;
+  object-fit: cover;
+
+  @include vp-767 {
+    width: 320px;
+    height: 240px;
+  }
+}

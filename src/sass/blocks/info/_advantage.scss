@@ -1,0 +1,38 @@
+.advantage {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantage__item {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  max-width: 290px;
+}
+
+.advantage__item-svg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.advantage__item-title {
+  font-family: $ff-font-kizhich;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.advantage__item-text {
+  text-align: center;
+}

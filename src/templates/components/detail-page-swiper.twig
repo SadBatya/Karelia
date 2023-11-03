@@ -1,0 +1,55 @@
+{% set slideList = [
+    {
+        img: "./assets/images/detail-page/detail-img-6.jpg",
+        img2x: "./assets/images/detail-page/detail-img-6.jpg 2x",
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-7.jpg",
+        img2x: "./assets/images/detail-page/detail-img-7.jpg 2x",
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-8.jpg",
+        img2x: "./assets/images/detail-page/detail-img-8.jpg 2x",
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-6.jpg",
+        img2x: "./assets/images/detail-page/detail-img-6.jpg 2x",
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-7.jpg",
+        img2x: "./assets/images/detail-page/detail-img-7.jpg 2x",
+    },
+    {
+        img: "./assets/images/detail-page/detail-img-8.jpg",
+        img2x: "./assets/images/detail-page/detail-img-8.jpg 2x",
+    },
+]%}
+
+<div class="swiper detail-swiper js-detail-swiper">
+    <div class="swiper-wrapper detail-swiper__wrapper">
+        {% for el in  slideList %}
+
+        <div class="swiper-slide detail-swiper__slide">
+            <div class="detail-swiper-slide">
+                <img
+                        class="detail-swiper-slide__img"
+                        width="669"
+                        height="500"
+                        src="{{ el.img }}"
+                        srcset="{{ el.img2x }} 2x"
+                        loading="lazy"
+                        decoding="auto"
+                        alt=""
+                >
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="swiper-pagination detail-swiper__pagination"></div>
+
+    <div class="swiper-button-prev detail-swiper__button-prev"></div>
+    <div class="swiper-button-next detail-swiper__button-next"></div>
+
+</div>

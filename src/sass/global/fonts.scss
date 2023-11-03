@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Geologica";
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url("fonts/geologica-light.woff2") format("woff2"),
+    url("fonts/geologica-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Geologica";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("fonts/geologica-regular.woff2") format("woff2"),
+    url("fonts/geologica-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("fonts/montserrat-regular.woff2") format("woff2"),
+    url("fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GG Kizhich";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("fonts/gg-kizhich-bold.woff2") format("woff2"),
+    url("fonts/gg-kizhich-bold.woff") format("woff");
+}

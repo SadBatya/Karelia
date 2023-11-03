@@ -1,0 +1,78 @@
+{% set block3 = [
+    {
+        img: "./assets/images/content-article/img-10.jpg",
+        img2x: "./assets/images/content-article/img-10@2x.jpg",
+        title: "Гастрономическое путешествие в Карелию",
+        label: "Кухня",
+        text: "Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой",
+    },
+    {
+        img: "./assets/images/content-article/img-11.jpg",
+        img2x: "./assets/images/content-article/img-11@2x.jpg",
+        title: "Weekend в Петрозаводске: что посмотреть за 2 дня",
+        label: "Достопримечательности",
+        text: "Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой",
+    },
+    {
+        img: "./assets/images/content-article/img-12.jpg",
+        img2x: "./assets/images/content-article/img-12@2x.jpg",
+        title: "Зеленый город. Лучшие локации для прогулок",
+        label: "Культурная жизнь",
+        text: "Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой",
+    },
+    {
+        img: "./assets/images/content-article/img-21-f.jpg",
+        img2x: "./assets/images/content-article/img-21-f@2x.jpg",
+        title: "Исторические достопримечательности Карелии",
+        label: "Религия",
+        text: "Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой",
+    },
+    {
+        img: "./assets/images/content-article/img-22-f.jpg",
+        img2x: "./assets/images/content-article/img-22-f@2x.jpg",
+        title: "Активные виды спорта и приключения в Карелии",
+        label: "Спорт",
+        text: "Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой",
+    },
+    {
+        img: "./assets/images/content-article/img-23-f.jpg",
+        img2x: "./assets/images/content-article/img-23-f@2x.jpg",
+        title: "Золотая пора - лучшие места для отдыха осенью",
+        label: "Культура",
+        text: "Пройдетесь по набережной Онежкского озера наслаждаясь красивыми видами и атмосферой",
+    },
+] %}
+
+<div class="main-page layout">
+    {% include "./../template-parts/home-page/swiper-main.twig" %}
+    {% include "./../template-parts/home-page/info.twig" %}
+
+    <div class="main-page__sight">
+        <section class="sight container sight--mode">
+            <div class="sight__wrapper">
+                {% include '../components/sight-filter.twig', with {
+                    list: block3,
+                    classModeArticle: 'article-block__article--hover-move',
+                    classModePositionContent: 'article-block--mod',
+                } %}
+            </div>
+        </section>
+
+        {% include "./../template-parts/home-page/more.twig", with {
+            text: 'разделы'
+        } %}
+    </div>
+
+    <div class="main-page__routes">
+        {% include "./../template-parts/home-page/routes.twig"%}
+        {% include "./../template-parts/home-page/more.twig", with {
+            classMode: "more--mod",
+            text: 'маршруты'
+        }%}
+    </div>
+
+    {% include "./../template-parts/home-page/swiper-footer.twig", with {
+        classMode: "swiper-footer--mod"
+    } %}
+</div>
+

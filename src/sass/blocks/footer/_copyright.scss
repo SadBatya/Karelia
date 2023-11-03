@@ -1,0 +1,9 @@
+.copyright {
+  display: flex;
+  flex-direction: column;
+  min-width: 162px;
+
+  @include vp-767 {
+    align-items: center;
+  }
+}

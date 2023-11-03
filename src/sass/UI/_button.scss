@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 10px 20px;
+  min-height: 46px;
+  color: $color-haiti;
+
+  background-color: $color-default-white;
+  border: none;
+  cursor: pointer;
+
+  transition: all $trans-default;
+  user-select: none;
+
+  &--green {
+    background-color: map-get($corporate, corp-1);
+
+    @include hover-focus {
+      color: $color-default-white;
+      background-color: $color-haiti;
+    }
+  }
+
+  &--black {
+    color: $color-default-white;
+    background-color: $color-haiti;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+}

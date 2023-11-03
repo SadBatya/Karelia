@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__img {
+  width: 243px;
+  height: 60px;
+  object-fit: cover;
+
+  @include vp-767 {
+    width: 150px;
+    height: 40px;
+  }
+}

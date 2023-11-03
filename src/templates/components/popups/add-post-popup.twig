@@ -1,0 +1,99 @@
+<div class="popup popup--grid-3-row popup__hide js-add-post-popup">
+    <div class="popup__overlay js-overlay"></div>
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__header">
+                <h3 class="popup__title title-h3">Добавить пост</h3>
+                <button class="btn popup__btn-close js-btn-close" aria-label="Закрыть модальное окно">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="popup__content">
+                <div class="add-post-popup">
+                    <form class="add-post-popup__form add-post-form js-add-post-form" action="">
+                        <div>
+                            <div class="add-post-popup__inner-content">
+                                <div class="add-post-popup__rules post-rules">
+                                    <details class="post-rules__details">
+                                        <summary class="post-rules__summary">
+                                            <span>Правила добавления поста</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </summary>
+                                        <div class="post-rules__content">
+                                            <div>
+                                                <h4>1. Уникальный и полезный контент:</h4>
+                                                <p>Все посты должны содержать оригинальный и полезный контент для аудитории. Избегайте копирования материалов с других источников.</p>
+                                            </div>
+                                            <div>
+                                                <h4>2. Тематика и целевая аудитория:</h4>
+                                                <p>Убедитесь, что контент соответствует тематике вашего сайта и интересам вашей целевой аудитории.</p>
+                                            </div>
+                                            <div>
+                                                <h4>1. Качественное изображение:</h4>
+                                                <p>Каждый пост должен сопровождаться высококачественным и релевантным изображением, привлекающим внимание читателей.</p>
+                                            </div>
+                                        </div>
+                                    </details>
+
+                                </div>
+
+                            </div>
+                            <div class="add-post-form__content">
+                                <fieldset class="add-post-form__fieldset add-post-form__fieldset--main">
+                                    <div class="add-post-form__wrapper-block">
+                                        <input class="add-post-form__input js-input-text" type="text" name="name" id="inputName" placeholder="" required>
+                                        <label class="add-post-form__label" for="inputName">Ваше имя<sup>*</sup></label>
+                                    </div>
+                                    <div class="add-post-form__wrapper-block">
+                                        <input class="add-post-form__input js-input-text" type="text" name="surname" id="inputSurname" placeholder="" required>
+                                        <label class="add-post-form__label" for="inputSurname">Ваша фамилия<sup>*</sup></label>
+                                    </div>
+                                    <div class="add-post-form__wrapper-block">
+                                        <input class="add-post-form__input js-input-email" type="email" name="email" id="inputEmail" placeholder="" required>
+                                        <label class="add-post-form__label" for="inputEmail">Ваш email<sup>*</sup></label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="add-post-form__fieldset">
+                                    <div class="add-post-form__wrapper-block">
+                                        <textarea class="add-post-form__input-textarea js-input-text" id="textAreaPost" placeholder="Начните вводить..." required></textarea>
+                                        <label class="add-post-form__label" for="textAreaPost">Текст публикации<sup>*</sup></label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="add-post-form__fieldset add-photo js-add-photo">
+                                    <div class="add-post-form__wrapper-block add-photo__wrapper">
+                                        <label class="add-post-form__label add-photo__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                 fill="none">
+                                                <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                            </svg>
+                                            <span class="">Загрузите файл</span>
+                                            <span>Фотографии в формате .jpg, .jpeg, .png, и не больше 5 МБ</span>
+                                            <input class="visually-hidden js-photo-file" name="files[]" accept="image" multiple type="file">
+                                        </label>
+
+                                    </div>
+
+                                    <ul class="add-photo__list js-files-photo-list">
+                                    </ul>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="add-post-popup__add-btn-wrapper">
+                            <button class="btn btn--green add-post-popup__add-btn" type="submit">Добавить пост</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="popup__footer"></div>
+        </div>
+    </div>
+</div>

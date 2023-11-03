@@ -1,0 +1,31 @@
+<div class="article-block article-block--count-3 container {{ classMode }}">
+    {% for el in list %}
+        <div class="article-block__article {{ classModeArticle }}">
+            <a class="article-block__link" href="#">
+                <img
+                    class="article-block__img"
+                    width="818"
+                    height="600"
+                    src="{{ el.img }}"
+                    srcset="{{ el.img2x }} 2x"
+                    loading="lazy"
+                    decoding="auto"
+                    alt=""
+                >
+                <div class="article-block__title-wrapper">
+                    {% if el.label %}
+                        <span class="article-block__label">{{ el.label }}</span>
+                    {% endif %}
+
+                    {% if el.title %}
+                        <h3 class="article-block__title title-h3">{{ el.title }}</h3>
+                    {% endif %}
+
+                    {% if el.text %}
+                        <p class="article-block__text">{{ el.text }}</p>
+                    {% endif %}
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>

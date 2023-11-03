@@ -1,0 +1,10 @@
+.info-popup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.info-popup__wrapper {
+  display: grid;
+}

@@ -1,0 +1,29 @@
+<div class="article-block article-block--full container {{ classMode }}">
+    <div class="article-block__article {{ classModeArticle }}">
+        <a class="article-block__link" href="#">
+            <img
+                class="article-block__img"
+                height="1648"
+                width="750"
+                src="{{img1x}}"
+                srcset="{{img2x}}"
+                loading="lazy"
+                decoding="auto"
+                alt=""
+            >
+            <div class="article-block__title-wrapper {{ classModeTitleWrapper }}">
+                {% if label %}
+                    <span class="article-block__label">{{ label }}</span>
+                {% endif %}
+
+                {% if title %}
+                    <h3 class="article-block__title title-h3">{{ title }}</h3>
+                {% endif %}
+
+                {% if text %}
+                    <p class="article-block__text">{{ text }}</p>
+                {% endif %}
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+{% set menuItems = [
+    {
+        text: 'О Карелии',
+        link: '#',
+    },
+    {
+        text: 'Чем заняться?',
+        link: '#',
+        subItem: [
+            {
+                text: 'Пункт 1',
+                link: '#',
+            },
+            {
+                text: 'Пункт 2',
+                link: '#',
+            }
+        ]
+    },
+    {
+        text: 'Идеи и маршруты',
+        link: '#',
+    },
+    {
+        text: 'Где побывать?',
+        link: '#',
+    },
+    {
+        text: 'Ваши впечатления',
+        link: '#',
+    },
+    {
+        text: 'Лайфхаки и советы',
+        link: '#',
+    },
+]%}
+
+<footer class="footer">
+    <div class="container footer__wrapper">
+        <div class="footer__left">
+            <div class="footer__logo">
+                <a href="./index.html">
+                    <img class="footer__logo-img" src="./assets/images/svg/logo.svg" alt="Логотип компании">
+                </a>
+            </div>
+            <div class="footer__copyright copyright">
+                <span>© 2023 Карелия. </span>
+                <span>Все права защищены</span>
+            </div>
+        </div>
+
+        <nav class="footer__nav nav">
+            <ul class="nav__list">
+            {% for el in menuItems %}
+                <li class="nav__item">
+                    <a class="nav__item-link" href={{el.link}}>{{el.text}}</a>
+                    {% if el.subItem %}
+                    <svg class="nav__item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                    {% endif%}
+                </li>  
+            {% endfor %}
+            </ul>
+        </nav>
+        <div class="footer__right">
+            <div class="social">
+                <h3 class="social__title">Соц.сети</h3>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="#" aria-label="vkontacte">
+                            <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect width="40" height="40" rx="20" fill="#0077FF"/>
+                                    <path d="M21.398 27C13.6208 27 9.18483 21.7447 9 13H12.8957C13.0237 19.4184 15.8957 22.1371 18.1706 22.6977V13H21.8388V18.5355C24.0852 18.2973 26.4454 15.7748 27.2416 13H30.9098C30.6098 14.4391 30.0118 15.8017 29.1531 17.0025C28.2944 18.2033 27.1935 19.2166 25.9194 19.979C27.3416 20.6756 28.5978 21.6615 29.6051 22.8717C30.6124 24.082 31.3478 25.489 31.7629 27H27.725C27.3524 25.6876 26.5951 24.5128 25.548 23.6228C24.5009 22.7328 23.2106 22.1673 21.8388 21.997V27H21.398Z" fill="white"/>
+                                </g>
+                            </svg>                                
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#" aria-label="telegram">
+                            <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect width="40" height="40" rx="20" fill="#27A6E5"/>
+                                    <path d="M28.6589 12.6022L25.5492 28.2923C25.5492 28.2923 25.1142 29.3801 23.9189 28.8584L16.7441 23.3526L16.7109 23.3364C17.68 22.4654 25.1952 15.7027 25.5237 15.3961C26.0321 14.9214 25.7165 14.6387 25.1261 14.9974L14.0252 22.053L9.74252 20.6108C9.74252 20.6108 9.06856 20.3708 9.00372 19.8491C8.93803 19.3265 9.76471 19.0439 9.76471 19.0439L27.2239 12.1889C27.2239 12.1889 28.6589 11.5579 28.6589 12.6022Z" fill="#FEFEFE"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h3 class="contacts__title">Контакты</h3>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

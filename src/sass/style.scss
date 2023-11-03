@@ -1,0 +1,54 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "global/layout";
+
+// UI
+// ------------------------------------------ //
+
+@import "UI/button";
+@import "UI/typograhy";
+
+
+// ------------------------------------------ //
+
+// template-parts
+
+// @import "template-parts/header";
+// @import "template-parts/footer";
+@import "template-parts/popup";
+// ------------------------------------------ //
+
+// popups
+// ------------------------------------------ //
+
+/*@import "popups/header";*/
+
+// ------------------------------------------ //
+
+// Blocks
+// ------------------------------------------ //
+
+
+@import "blocks/header/index";
+@import "blocks/footer/index";
+@import "blocks/article/index";
+@import "blocks/content/index";
+@import "blocks/sight/index";
+@import "blocks/main/index";
+@import "blocks/detail-page/index";
+@import "blocks/info/index";
+@import "blocks/popup-add-post/index";
+@import "blocks/about/about";
+
